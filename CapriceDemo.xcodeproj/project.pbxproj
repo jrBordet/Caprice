@@ -21,6 +21,7 @@
 		F80094502494D5BF004AA84A /* PrecedenceGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */; };
 		F80094522494D655004AA84A /* ForwardApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094512494D655004AA84A /* ForwardApplication.swift */; };
 		F80094542494D670004AA84A /* ForwardComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094532494D670004AA84A /* ForwardComposition.swift */; };
+		F800945A2494E217004AA84A /* SingleTypeComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094592494E217004AA84A /* SingleTypeComposition.swift */; };
 		F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */; };
 		FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecedenceGroups.swift; sourceTree = "<group>"; };
 		F80094512494D655004AA84A /* ForwardApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardApplication.swift; sourceTree = "<group>"; };
 		F80094532494D670004AA84A /* ForwardComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardComposition.swift; sourceTree = "<group>"; };
+		F80094592494E217004AA84A /* SingleTypeComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeComposition.swift; sourceTree = "<group>"; };
 		F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC2391D9CF54F4A2A49D4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 				F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */,
 				F80094512494D655004AA84A /* ForwardApplication.swift */,
 				F80094532494D670004AA84A /* ForwardComposition.swift */,
+				F80094592494E217004AA84A /* SingleTypeComposition.swift */,
 			);
 			path = Caprice;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				F80094542494D670004AA84A /* ForwardComposition.swift in Sources */,
 				8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */,
 				F80094522494D655004AA84A /* ForwardApplication.swift in Sources */,
+				F800945A2494E217004AA84A /* SingleTypeComposition.swift in Sources */,
 				F80094502494D5BF004AA84A /* PrecedenceGroups.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
