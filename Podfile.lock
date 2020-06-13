@@ -1,0 +1,16 @@
+PODS:
+  - SceneBuilder (1.0.0)
+
+DEPENDENCIES:
+  - SceneBuilder (= 1.0.0)
+
+SPEC REPOS:
+  https://github.com/jrBordet/RxFramework.podspec.git:
+    - SceneBuilder
+
+SPEC CHECKSUMS:
+  SceneBuilder: e8beec60660be16524eb651df022f310e7a200aa
+
+PODFILE CHECKSUM: c1b014fe2d93c5ebabab0f140c9f136fca105906
+
+COCOAPODS: 1.9.1

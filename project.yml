@@ -1,0 +1,32 @@
+name: CapriceDemo
+options: # Some general settings for the project
+    bundleIdPrefix: com.caprice
+    createIntermediateGroups: true # If the folders are nested, also nest the groups in Xcode
+#    indentWidth: 2 # indent by 2 spaces
+#    tabWidth: 2 # a tab is 2 spaces
+settings:
+    DEVELOPMENT_TEAM: None
+targets:
+  CapriceDemo:
+    type: application
+    platform: iOS
+    deploymentTarget: 10.0
+    sources:
+        - path: CapriceDemo
+    dependencies:
+        - target: Caprice
+  CapriceDemoTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: 10.0
+    sources:
+        - path: CapriceDemoTests
+    dependencies:
+        - target: CapriceDemo
+  # Caprice pod library
+  Caprice:
+    type: framework
+    platform: iOS
+    deploymentTarget: 10.0
+    sources:
+        - path: Caprice

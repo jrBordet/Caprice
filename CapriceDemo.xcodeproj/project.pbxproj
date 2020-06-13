@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E52386C9AA7CB0750737D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2F013AA4C9D1E2AE29FC7 /* DetailViewController.swift */; };
+		28A684245B29F2745913DECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB0519B4645C4C81E19EC6 /* AppDelegate.swift */; };
+		8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476DC01A97B19BC7A1FBD26 /* Lenses.swift */; };
+		A33303939F4D75DEFB3E72AE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B1BA7EF448BC7D7733B9DB /* DetailViewController.xib */; };
+		B8F820643F7B79EAF33B5BA5 /* Pods_CapriceDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834BD428A9763D5195950069 /* Pods_CapriceDemoTests.framework */; };
+		D05E9273109D712309C09F54 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548C12DBC3D7FFEA61F26DE8 /* ViewController.xib */; };
+		DCA2795C0C8D70C9A13732B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181BCB50AD7E188A0E74300 /* ViewController.swift */; };
+		E25AEED47D80B8AC291CCC2C /* Caprice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; };
+		E8096A49DD827BD23EBD78CF /* CapriceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */; };
+		F800944C2494D563004AA84A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800944B2494D563004AA84A /* Alarm.swift */; };
+		F800944E2494D578004AA84A /* Alarm+Lenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800944D2494D578004AA84A /* Alarm+Lenses.swift */; };
+		F80094502494D5BF004AA84A /* PrecedenceGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */; };
+		F80094522494D655004AA84A /* ForwardApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094512494D655004AA84A /* ForwardApplication.swift */; };
+		F80094542494D670004AA84A /* ForwardComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094532494D670004AA84A /* ForwardComposition.swift */; };
+		F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */; };
+		FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51F79857C868FC76DA3E4E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2142905A41197C5C1E5697B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C16A0D8501CA646FB168B50F;
+			remoteInfo = Caprice;
+		};
+		9A78B45CB5591F1E60153DEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2142905A41197C5C1E5697B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA038E569489A1FC832889E;
+			remoteInfo = CapriceDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		487509FD4BAE7C596D3A199F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1476DC01A97B19BC7A1FBD26 /* Lenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lenses.swift; sourceTree = "<group>"; };
+		1ACB0519B4645C4C81E19EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapriceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA2EBD30BB5C17071E56948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		548C12DBC3D7FFEA61F26DE8 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		552D6665E2A342980149FF5B /* Pods-CapriceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemo.debug.xcconfig"; path = "Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		73B2F013AA4C9D1E2AE29FC7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		834BD428A9763D5195950069 /* Pods_CapriceDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapriceDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B1BA7EF448BC7D7733B9DB /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapriceDemoTests.swift; sourceTree = "<group>"; };
+		AE9DEEFE867400AE62BF4795 /* Caprice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Caprice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B181BCB50AD7E188A0E74300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF33AF8CE1741E8A7BA8A876 /* Pods-CapriceDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF805FA9EF7FBB44B0C13FA6 /* Pods-CapriceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemo.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DEE9C8FA1275960484D2D65E /* CapriceDemoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CapriceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7530B413EF3336B09BF4695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F5CD1449B6B94FF44B638C46 /* CapriceDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CapriceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F800944B2494D563004AA84A /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		F800944D2494D578004AA84A /* Alarm+Lenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alarm+Lenses.swift"; sourceTree = "<group>"; };
+		F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecedenceGroups.swift; sourceTree = "<group>"; };
+		F80094512494D655004AA84A /* ForwardApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardApplication.swift; sourceTree = "<group>"; };
+		F80094532494D670004AA84A /* ForwardComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardComposition.swift; sourceTree = "<group>"; };
+		F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		FEC2391D9CF54F4A2A49D4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94A1D2F16B7227C6592D0E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8F820643F7B79EAF33B5BA5 /* Pods_CapriceDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2FC1F346D6FB030B6C5596A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4A4ECF8E96CB71A8F9332AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25AEED47D80B8AC291CCC2C /* Caprice.framework in Frameworks */,
+				F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17B6E66AE58794A8B19AAD73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9DEEFE867400AE62BF4795 /* Caprice.framework */,
+				F5CD1449B6B94FF44B638C46 /* CapriceDemo.app */,
+				DEE9C8FA1275960484D2D65E /* CapriceDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AA7FAB65FD8CACB3EA0CC32 = {
+			isa = PBXGroup;
+			children = (
+				261EA5A5D58953549E5F5B76 /* Caprice */,
+				F83722320C207274D67B227C /* CapriceDemo */,
+				27B7F35D9447471F548A03A1 /* CapriceDemoTests */,
+				17B6E66AE58794A8B19AAD73 /* Products */,
+				F73B03D6D20C3F913E9373F5 /* Pods */,
+				F63CF08ACBBC025EF68C812F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		261EA5A5D58953549E5F5B76 /* Caprice */ = {
+			isa = PBXGroup;
+			children = (
+				E7530B413EF3336B09BF4695 /* Info.plist */,
+				1476DC01A97B19BC7A1FBD26 /* Lenses.swift */,
+				F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */,
+				F80094512494D655004AA84A /* ForwardApplication.swift */,
+				F80094532494D670004AA84A /* ForwardComposition.swift */,
+			);
+			path = Caprice;
+			sourceTree = "<group>";
+		};
+		27B7F35D9447471F548A03A1 /* CapriceDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */,
+				FEC2391D9CF54F4A2A49D4DC /* Info.plist */,
+			);
+			path = CapriceDemoTests;
+			sourceTree = "<group>";
+		};
+		4E821920EA9BE32B786A4DCF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F800944A2494D553004AA84A /* Models */,
+				73B2F013AA4C9D1E2AE29FC7 /* DetailViewController.swift */,
+				97B1BA7EF448BC7D7733B9DB /* DetailViewController.xib */,
+				B181BCB50AD7E188A0E74300 /* ViewController.swift */,
+				548C12DBC3D7FFEA61F26DE8 /* ViewController.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F63CF08ACBBC025EF68C812F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */,
+				834BD428A9763D5195950069 /* Pods_CapriceDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F73B03D6D20C3F913E9373F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				552D6665E2A342980149FF5B /* Pods-CapriceDemo.debug.xcconfig */,
+				CF805FA9EF7FBB44B0C13FA6 /* Pods-CapriceDemo.release.xcconfig */,
+				CF33AF8CE1741E8A7BA8A876 /* Pods-CapriceDemoTests.debug.xcconfig */,
+				F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F800944A2494D553004AA84A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F800944B2494D563004AA84A /* Alarm.swift */,
+				F800944D2494D578004AA84A /* Alarm+Lenses.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F83722320C207274D67B227C /* CapriceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1ACB0519B4645C4C81E19EC6 /* AppDelegate.swift */,
+				4EA2EBD30BB5C17071E56948 /* Info.plist */,
+				4E821920EA9BE32B786A4DCF /* View Controllers */,
+			);
+			path = CapriceDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AC0189CB830A160FB2A7615 /* CapriceDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B324DCEDF7065986BF1D10 /* Build configuration list for PBXNativeTarget "CapriceDemoTests" */;
+			buildPhases = (
+				A6E3F578DDBB123719ECF522 /* [CP] Check Pods Manifest.lock */,
+				B38058E9C00B7BB1550D2C5B /* Sources */,
+				94A1D2F16B7227C6592D0E03 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E60BCD76C7DCD5532909DB46 /* PBXTargetDependency */,
+			);
+			name = CapriceDemoTests;
+			productName = CapriceDemoTests;
+			productReference = DEE9C8FA1275960484D2D65E /* CapriceDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAA038E569489A1FC832889E /* CapriceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0088CD696E4A59FED6E858E9 /* Build configuration list for PBXNativeTarget "CapriceDemo" */;
+			buildPhases = (
+				F1E3EDFBBACF0A0FC48FCA6E /* [CP] Check Pods Manifest.lock */,
+				DE4753378BF8937E55AA6925 /* Sources */,
+				8B5380E7560ADB8489E950CD /* Resources */,
+				E4A4ECF8E96CB71A8F9332AB /* Frameworks */,
+				487509FD4BAE7C596D3A199F /* Embed Frameworks */,
+				F3DB05AD19E6E154667D7F1E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B97C230BD51034851C471D7 /* PBXTargetDependency */,
+			);
+			name = CapriceDemo;
+			productName = CapriceDemo;
+			productReference = F5CD1449B6B94FF44B638C46 /* CapriceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C16A0D8501CA646FB168B50F /* Caprice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6860C0522F925EBA4682A27 /* Build configuration list for PBXNativeTarget "Caprice" */;
+			buildPhases = (
+				A2DC2A174B45C8A5A6092DFC /* Sources */,
+				B2FC1F346D6FB030B6C5596A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Caprice;
+			productName = Caprice;
+			productReference = AE9DEEFE867400AE62BF4795 /* Caprice.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2142905A41197C5C1E5697B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					5AC0189CB830A160FB2A7615 = {
+						DevelopmentTeam = None;
+					};
+					BAA038E569489A1FC832889E = {
+						DevelopmentTeam = None;
+					};
+					C16A0D8501CA646FB168B50F = {
+						DevelopmentTeam = None;
+					};
+				};
+			};
+			buildConfigurationList = 0FD6BF63968F66E0C5940D09 /* Build configuration list for PBXProject "CapriceDemo" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AA7FAB65FD8CACB3EA0CC32;
+			productRefGroup = 17B6E66AE58794A8B19AAD73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C16A0D8501CA646FB168B50F /* Caprice */,
+				BAA038E569489A1FC832889E /* CapriceDemo */,
+				5AC0189CB830A160FB2A7615 /* CapriceDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B5380E7560ADB8489E950CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33303939F4D75DEFB3E72AE /* DetailViewController.xib in Resources */,
+				D05E9273109D712309C09F54 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6E3F578DDBB123719ECF522 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapriceDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E3EDFBBACF0A0FC48FCA6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapriceDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3DB05AD19E6E154667D7F1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2DC2A174B45C8A5A6092DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80094542494D670004AA84A /* ForwardComposition.swift in Sources */,
+				8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */,
+				F80094522494D655004AA84A /* ForwardApplication.swift in Sources */,
+				F80094502494D5BF004AA84A /* PrecedenceGroups.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38058E9C00B7BB1550D2C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8096A49DD827BD23EBD78CF /* CapriceDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE4753378BF8937E55AA6925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A684245B29F2745913DECC /* AppDelegate.swift in Sources */,
+				02E52386C9AA7CB0750737D6 /* DetailViewController.swift in Sources */,
+				F800944E2494D578004AA84A /* Alarm+Lenses.swift in Sources */,
+				DCA2795C0C8D70C9A13732B1 /* ViewController.swift in Sources */,
+				F800944C2494D563004AA84A /* Alarm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B97C230BD51034851C471D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C16A0D8501CA646FB168B50F /* Caprice */;
+			targetProxy = 51F79857C868FC76DA3E4E9F /* PBXContainerItemProxy */;
+		};
+		E60BCD76C7DCD5532909DB46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA038E569489A1FC832889E /* CapriceDemo */;
+			targetProxy = 9A78B45CB5591F1E60153DEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11BD34E39408691348F8E1BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = None;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11DF7967247C7AF6EA03EE72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = None;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5110F12B784F258685887C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF33AF8CE1741E8A7BA8A876 /* Pods-CapriceDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CapriceDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.CapriceDemoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapriceDemo.app/CapriceDemo";
+			};
+			name = Debug;
+		};
+		54BB5F63810C00EF4D7395DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF805FA9EF7FBB44B0C13FA6 /* Pods-CapriceDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = CapriceDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.CapriceDemo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81DD0CD3D0BF33EA4F8079D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CapriceDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.CapriceDemoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CapriceDemo.app/CapriceDemo";
+			};
+			name = Release;
+		};
+		A713E4F180BCEEEA80E65B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Caprice/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.Caprice;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		AC90B0E241F5C47C79086586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Caprice/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.Caprice;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C2CEC7C676598597F835FFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552D6665E2A342980149FF5B /* Pods-CapriceDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = CapriceDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.CapriceDemo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0088CD696E4A59FED6E858E9 /* Build configuration list for PBXNativeTarget "CapriceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2CEC7C676598597F835FFEB /* Debug */,
+				54BB5F63810C00EF4D7395DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0FD6BF63968F66E0C5940D09 /* Build configuration list for PBXProject "CapriceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11DF7967247C7AF6EA03EE72 /* Debug */,
+				11BD34E39408691348F8E1BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2B324DCEDF7065986BF1D10 /* Build configuration list for PBXNativeTarget "CapriceDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5110F12B784F258685887C67 /* Debug */,
+				81DD0CD3D0BF33EA4F8079D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E6860C0522F925EBA4682A27 /* Build configuration list for PBXNativeTarget "Caprice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC90B0E241F5C47C79086586 /* Debug */,
+				A713E4F180BCEEEA80E65B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2142905A41197C5C1E5697B6 /* Project object */;
+}
