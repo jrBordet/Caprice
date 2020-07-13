@@ -26,6 +26,10 @@ class ViewController: UIViewController {
             Alarm.morningStar
                 |> Alarm.titleLens *~ "new morning star"
                 |> Alarm.enabledLens *~ false
+                
+        let result = Alarm.morningStar |> ^Alarm.titleLens
+
+        print(result)
         
         mainLabel.text = newMorningStar.title
     }
