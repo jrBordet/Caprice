@@ -82,7 +82,15 @@ class AppThemeTests: XCTestCase {
         
         let authors = books.filter(by(^\.author.name, "Massimo"))
         
-        XCTAssertEqual(authors.first?.author, Author.max)
+        let surname = books
+            .filter(by(^\.author.name, "Massimo"))
+            .map(^\.author)
+            .map(^\.surname)
+            .reduce("", +)
+            .lowercased()
+        
+        XCTAssertEqual(authors.first?.author, .max)
+        XCTAssertEqual(surname, "pigliucci")
     }
     
     func test_filter_composition_2() {
