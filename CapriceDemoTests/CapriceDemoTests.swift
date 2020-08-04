@@ -44,6 +44,12 @@ class AppThemeTests: XCTestCase {
         XCTAssertTrue(users.filter(get(\.isStaff)).isEmpty)
     }
     
+    func test_get() {
+        let id = user |> ^\.id
+        
+        XCTAssertEqual(id, 1)
+    }
+    
     func test_map_composition() {
         _ = users
             .map(\.email)
@@ -69,16 +75,28 @@ class AppThemeTests: XCTestCase {
         }
     }
     
+    func test_filter() {
+        let userOne = users.filter { $0 |> ^\User.id == 1 }.first!
+                
+        XCTAssertEqual(userOne, User(id: 1, email: "blob@fake.co"))
+        
+        let authors = books.filter(by(^\.author.name, "Massimo"))
+        
+        let surname = books
+            .filter(by(^\.author.name, "Massimo"))
+            .map(^\.author)
+            .map(^\.surname)
+            .reduce("", +)
+            .lowercased()
+        
+        XCTAssertEqual(authors.first?.author, .max)
+        XCTAssertEqual(surname, "pigliucci")
+    }
+    
     func test_filter_composition_2() {
-        self.measure {
-            
-            let result = users
-                .filter(get(\.isStaff) >>> { $0 == true })
-            //                .filter(^\User.isStaff)
-            //                .filter { $0.isStaff == false }
-            
-            XCTAssertEqual(result.count, 0)
-        }
+        let r = users.filter(by(^\.id, 1)).first!
+                
+        XCTAssertEqual(r, User(id: 1, email: "blob@fake.co"))
     }
     
     func test_sorting() {
