@@ -79,6 +79,10 @@ class AppThemeTests: XCTestCase {
         let userOne = users.filter { $0 |> ^\User.id == 1 }.first!
                 
         XCTAssertEqual(userOne, User(id: 1, email: "blob@fake.co"))
+        
+        let authors = books.filter(by(^\.author.name, "Massimo"))
+        
+        XCTAssertEqual(authors.first?.author, Author.max)
     }
     
     func test_filter_composition_2() {
