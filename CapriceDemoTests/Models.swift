@@ -26,6 +26,33 @@ public struct User: Equatable {
     }
 }
 
+let books: [Book] = [
+    .it,
+    .stoicism
+]
+
+public struct Book: Equatable {
+    let id: Int
+    let title: String
+    
+    let author: Author
+}
+
+extension Book {
+    static var stoicism = Book(id: 0, title: "Come essere stoico", author: .max)
+    static var it = Book(id: 1, title: "IT", author: .king)
+}
+
+public struct Author: Equatable {
+    let name: String
+    let surname: String
+}
+
+extension Author {
+    static var king = Author(name: "Stephen", surname: "King")
+    static var max = Author(name: "Massimo", surname: "Pigliucci")
+}
+
 extension User {
     var isStaff: Bool {
         return self.email.hasSuffix("@syn.com")

@@ -31,6 +31,15 @@ public prefix func ^<Root, Value>(_ kp: KeyPath<Root, Value>) -> (Root) -> Value
     get(kp)
 }
 
+// users.filter(by(^\User.id, 1))
+
+public func by<Root, Value: Equatable>(
+    _ f: @escaping (Root) -> Value,
+    _ x: Value
+) -> (Root) -> Bool {
+    return { $0 |> f == x }
+}
+
 public func their<Root, Value>(
     _ f: @escaping (Root) -> Value,
     _ g: @escaping (Value, Value) -> Bool
@@ -50,12 +59,13 @@ public func their<Root, Value>(
  
  */
 
-
 public func their<Root, Value: Comparable>(
     _ f: @escaping (Root) -> Value
 ) -> (Root, Root)-> Bool {
     return their(f, <)
 }
+
+// _ = episodes.reduce(0, combining(^\.viewCount, by: +))
 
 func combining<Root, Value>(
     _ f: @escaping (Root) -> Value,
