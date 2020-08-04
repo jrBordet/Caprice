@@ -14,6 +14,7 @@ target 'CapriceDemo' do
   target 'CapriceDemoTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Difference', '0.4'
   end
 
 end
