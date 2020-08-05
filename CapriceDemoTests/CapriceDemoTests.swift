@@ -53,8 +53,11 @@ class AppThemeTests: XCTestCase {
             .map(^\.count)
         
         // it’s a nice performance gain, too! A single traversal instead of two.
-        _ = users
-            .map(get(\.email) >>> get(\.count))
+        let r = users.map(^\User.email >>> ^\.count)
+        
+        let p = users.map(^\.id).reduce(0, +)
+                
+        XCTAssertEqual(p, 10)
         
         _ = users
             .map(get(\.email.count))

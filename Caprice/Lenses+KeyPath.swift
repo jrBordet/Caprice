@@ -70,7 +70,7 @@ public prefix func ^<Root, Value>(_ kp: KeyPath<Root, Value>) -> (Root) -> Value
 // users.filter(by(^\User.id, 1))
 
 
-/// A function to descriibe a filter
+/// A function to descriibe a way to filter
 /// - Parameters:
 ///   - f: A function that take the Whole and return a Part
 ///   - x: A value Equatable to match
@@ -85,6 +85,17 @@ public func by<Root, Value: Equatable>(
     return { $0 |> f == x }
 }
 
+
+/// A function to descriibe a way to sort.
+/// - Parameters:
+///   - f: A function that take the Whole and return a Part
+///   - g: A Value
+/// - Returns: A function that take a whole and return a function that take two value of the same type and return a boolean..
+///     ```
+///     users.sorted(by: their(^\User.id, <))
+///     users.min(by: their(get(\.email), <))
+///     users.max(by: their(get(\.email), <))
+///     ```
 public func their<Root, Value>(
     _ f: @escaping (Root) -> Value,
     _ g: @escaping (Value, Value) -> Bool
@@ -96,12 +107,11 @@ public func their<Root, Value>(
  It’s admittedly a bit strange to specify ' <'given that it’s the only valid way of getting the maximum or minimum.
  Maybe we can define an overload to help.
  
- users
- .min(by: their(get(\.email), <))
+ ```
+ users.min(by: their(get(\.email), <))
  
- users
- .max(by: their(get(\.email), <))
- 
+ users.max(by: their(get(\.email), <))
+ ```
  */
 
 public func their<Root, Value: Comparable>(
@@ -110,8 +120,14 @@ public func their<Root, Value: Comparable>(
     return their(f, <)
 }
 
-// _ = episodes.reduce(0, combining(^\.viewCount, by: +))
-
+/// A function to descriibe a  way to reduce.
+/// - Parameters:
+///   - f: A function that take the Whole and return a Part
+///   - g: A Value
+/// - Returns: A function that take a whole and return a function that take a Part and  a Whole and return a Value.
+///     ```
+///     _ = episodes.reduce(0, combining(^\.viewCount, by: +))
+///     ```
 func combining<Root, Value>(
     _ f: @escaping (Root) -> Value,
     by g: @escaping (Value, Value) -> Value
