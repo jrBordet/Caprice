@@ -17,7 +17,6 @@ class AppThemeTests: XCTestCase {
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        
     }
     
     func test_forrward_application() {
@@ -34,12 +33,10 @@ class AppThemeTests: XCTestCase {
         let isStaff = user |> get(\User.isStaff)
         
         XCTAssertTrue(isStaff)
-        
-        let emails1 = users.map(\User.email)
-        
+                
         let emails2 = users.map(get(\.email))
         
-        XCTAssertEqual(emails1, emails2)
+        XCTAssertEqual(emails2, ["blob@fake.co", "protocol.me.maybe@appleco.example", "bee@co.domain", "a.morphism@category.theory"])
         
         XCTAssertTrue(users.filter(get(\.isStaff)).isEmpty)
     }
@@ -56,8 +53,11 @@ class AppThemeTests: XCTestCase {
             .map(^\.count)
         
         // it’s a nice performance gain, too! A single traversal instead of two.
-        _ = users
-            .map(get(\.email) >>> get(\.count))
+        let r = users.map(^\User.email >>> ^\.count)
+        
+        let p = users.map(^\.id).reduce(0, +)
+                
+        XCTAssertEqual(p, 10)
         
         _ = users
             .map(get(\.email.count))
