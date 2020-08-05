@@ -27,3 +27,37 @@ end
 ```ruby
 pod install
 ```
+## Table of Contents
+
+* [`Optics`](#optics)
+
+## `Optics`
+A `Lens` type and a bridge between the lens world and the Swift key path world.
+
+```swift
+
+    struct Book: Equatable {
+        var id: Int
+        var title: String
+
+        var author: Author
+    }
+
+    struct Author: Equatable {
+        var name: String
+        var surname: String
+    }
+
+    extension Book {
+        static var galacticGuideForHitchhikers = Book(id: 2, title: "galactic guide for hitchhikers", author: .adams)
+    }
+
+    extension Author {
+        static var adams = Author(name: "Adams", surname: "Douglas")
+    }
+
+    let name = .galacticGuideForHitchhikers |> ^\Book.author.name
+    
+    let newBook = .galacticGuideForHitchhikers |> \Book.author.name *~ "Adams Noël"
+
+```
