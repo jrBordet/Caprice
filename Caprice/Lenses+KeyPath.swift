@@ -8,9 +8,15 @@
 import Foundation
 
 
-/// lens is a functional getter and setter:  in this context the word “functional” really means “immutable”
-/// - Parameter keyPath: A key path.
-/// - Returns:           A part.
+/// lens is a functional getter and setter:  in this context the word “functional” really means “immutable”.
+/// - Parameters:
+///   - keyPath: A key path.
+///   - part: A part.
+/// - Returns: A lens.
+///     ```
+///     let id = lens(\User.id).get(user)
+///     let newUser = lens(\User.id).set(0, user)
+///     ```
 public func lens<Whole, Part>(_ keyPath: WritableKeyPath<Whole, Part>) -> Lens<Whole, Part> {
     return Lens<Whole, Part>(
         get: { $0[keyPath: keyPath] },
@@ -27,11 +33,19 @@ public func lens<Whole, Part>(_ keyPath: WritableKeyPath<Whole, Part>) -> Lens<W
 ///   - keyPath: A key path.
 ///   - part: A part.
 /// - Returns: A function that transforms a whole into a new whole with a part replaced.
-///            Usage: let newUser = lens(\User.id).set(0, user)
+///     ```
+///     user |> \.email *~ "another@mail.com"
+///     ```
 public func *~ <Whole, Part> (keyPath: WritableKeyPath<Whole, Part>, part: Part) -> ((Whole) -> Whole) {
     return lens(keyPath) *~ part
 }
 
+/// `get` function.
+/// - Parameter kp: A key path.
+/// - Returns: A function taht take a part from a Whole.
+///     ```
+///     let id = lens(\User.id).get(user)
+///     ```
 public func get<Root, Value>(_ kp: KeyPath<Root, Value>) -> (Root) -> Value {
     return { root in
         root[keyPath: kp]
@@ -44,8 +58,11 @@ prefix operator ^
 /// - Parameters:
 ///   - keyPath: A key path.
 ///   - part: A part.
-/// - Returns: A function that transforms a whole into a new whole with a part replaced.
-///            Usage: let id = lens(\User.id).get(user)
+/// - Returns: A function taht take a part from a Whole.
+///   A loop to print each character on a seperate line
+///    ```
+///    let name = book |> ^\Book.author.name
+///    ```
 public prefix func ^<Root, Value>(_ kp: KeyPath<Root, Value>) -> (Root) -> Value {
     get(kp)
 }

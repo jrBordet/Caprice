@@ -33,9 +33,9 @@ class LensesTests: XCTestCase {
         let result = user |> \.email *~ "another@mail.com"
         
         let newUser = lens(\User.id).set(0, user)
-        XCTAssertEqual(newUser |> ^\.id, 0)
+        XCTAssertEqual(newUser |> ^\User.id, 0)
         
-        lens(\User.id).set
+        //lens(\User.id).set
         
         let id = lens(\User.id).get(user)
         
@@ -45,7 +45,7 @@ class LensesTests: XCTestCase {
     func test_lens_set_nested_keypath() {
         let result: Book = .it |> \.author.name *~ "new author"
         
-        XCTAssertEqual(result |> ^\.author.name , "new author")
+        XCTAssertEqual(result |> ^\Book.author.name, "new author")
     }
     
     func testPerformanceExample() throws {
