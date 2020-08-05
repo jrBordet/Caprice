@@ -25,7 +25,7 @@ class LensesTests: XCTestCase {
             .map(^\.surname)
             .reduce("", +)
             .lowercased()
-        
+                
         XCTAssertEqual(surname, "pigliucci")
     }
     

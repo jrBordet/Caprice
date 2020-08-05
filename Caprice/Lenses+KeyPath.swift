@@ -52,8 +52,6 @@ public func get<Root, Value>(_ kp: KeyPath<Root, Value>) -> (Root) -> Value {
     }
 }
 
-prefix operator ^
-
 /// Infix operator of the `get` function.
 /// - Parameters:
 ///   - keyPath: A key path.
@@ -63,12 +61,23 @@ prefix operator ^
 ///    ```
 ///    let name = book |> ^\Book.author.name
 ///    ```
+prefix operator ^
+
 public prefix func ^<Root, Value>(_ kp: KeyPath<Root, Value>) -> (Root) -> Value {
     get(kp)
 }
 
 // users.filter(by(^\User.id, 1))
 
+
+/// A function to descriibe a filter
+/// - Parameters:
+///   - f: A function that take the Whole and return a Part
+///   - x: A value Equatable to match
+/// - Returns: A function that take a whole and return a boolean.
+///     ```
+///     books.filter(by(^\Book.author.name, "Massimo"))
+///     ```
 public func by<Root, Value: Equatable>(
     _ f: @escaping (Root) -> Value,
     _ x: Value
