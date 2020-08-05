@@ -32,6 +32,13 @@ class LensesTests: XCTestCase {
     func test_lens_set() {
         let result = user |> \.email *~ "another@mail.com"
         
+        let newUser = lens(\User.id).set(0, user)
+        XCTAssertEqual(newUser |> ^\.id, 0)
+        
+        lens(\User.id).set
+        
+        let id = lens(\User.id).get(user)
+        
         XCTAssertEqual(result.email, "another@mail.com")
     }
     

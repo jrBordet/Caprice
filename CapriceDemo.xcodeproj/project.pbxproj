@@ -26,6 +26,7 @@
 		F882C89424D939BE00A82503 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89324D939BE00A82503 /* Utils.swift */; };
 		F882C89624D9440700A82503 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89524D9440700A82503 /* Models.swift */; };
 		F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A724D9C5D300A82503 /* LensesTests.swift */; };
+		F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */; };
 		F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */; };
 		FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		F882C89324D939BE00A82503 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F882C89524D9440700A82503 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F882C8A724D9C5D300A82503 /* LensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensesTests.swift; sourceTree = "<group>"; };
+		F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lenses+KeyPath.swift"; sourceTree = "<group>"; };
 		F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC2391D9CF54F4A2A49D4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 			children = (
 				E7530B413EF3336B09BF4695 /* Info.plist */,
 				1476DC01A97B19BC7A1FBD26 /* Lenses.swift */,
+				F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */,
 				F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */,
 				F80094512494D655004AA84A /* ForwardApplication.swift */,
 				F80094532494D670004AA84A /* ForwardComposition.swift */,
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */,
 				F80094542494D670004AA84A /* ForwardComposition.swift in Sources */,
 				8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */,
 				F80094522494D655004AA84A /* ForwardApplication.swift in Sources */,
