@@ -14,8 +14,8 @@ func incr(_ x: Int) -> Int {
 let user = User(id: 1, email: "blob@syn.com")
 
 public struct User: Equatable {
-    let id: Int
-    let email: String
+    var id: Int
+    var email: String
     
     public init(
         id: Int,
@@ -32,10 +32,10 @@ let books: [Book] = [
 ]
 
 public struct Book: Equatable {
-    let id: Int
-    let title: String
+    var id: Int
+    var title: String
     
-    let author: Author
+    var author: Author
 }
 
 extension Book {
@@ -44,8 +44,8 @@ extension Book {
 }
 
 public struct Author: Equatable {
-    let name: String
-    let surname: String
+    var name: String
+    var surname: String
 }
 
 extension Author {

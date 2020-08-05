@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		02E52386C9AA7CB0750737D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2F013AA4C9D1E2AE29FC7 /* DetailViewController.swift */; };
 		28A684245B29F2745913DECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB0519B4645C4C81E19EC6 /* AppDelegate.swift */; };
-		8187CEA3428BDDC1C2D1BF3F /* Lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476DC01A97B19BC7A1FBD26 /* Lens.swift */; };
+		8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476DC01A97B19BC7A1FBD26 /* Lenses.swift */; };
 		A33303939F4D75DEFB3E72AE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B1BA7EF448BC7D7733B9DB /* DetailViewController.xib */; };
 		B8F820643F7B79EAF33B5BA5 /* Pods_CapriceDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834BD428A9763D5195950069 /* Pods_CapriceDemoTests.framework */; };
 		D05E9273109D712309C09F54 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548C12DBC3D7FFEA61F26DE8 /* ViewController.xib */; };
@@ -25,6 +25,8 @@
 		F882C89224D889F000A82503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89124D889F000A82503 /* User.swift */; };
 		F882C89424D939BE00A82503 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89324D939BE00A82503 /* Utils.swift */; };
 		F882C89624D9440700A82503 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89524D9440700A82503 /* Models.swift */; };
+		F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A724D9C5D300A82503 /* LensesTests.swift */; };
+		F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */; };
 		F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */; };
 		FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -61,7 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1476DC01A97B19BC7A1FBD26 /* Lens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lens.swift; sourceTree = "<group>"; };
+		1476DC01A97B19BC7A1FBD26 /* Lenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lenses.swift; sourceTree = "<group>"; };
 		1ACB0519B4645C4C81E19EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapriceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA2EBD30BB5C17071E56948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +89,8 @@
 		F882C89124D889F000A82503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F882C89324D939BE00A82503 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F882C89524D9440700A82503 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F882C8A724D9C5D300A82503 /* LensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensesTests.swift; sourceTree = "<group>"; };
+		F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lenses+KeyPath.swift"; sourceTree = "<group>"; };
 		F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC2391D9CF54F4A2A49D4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				E7530B413EF3336B09BF4695 /* Info.plist */,
-				1476DC01A97B19BC7A1FBD26 /* Lens.swift */,
+				1476DC01A97B19BC7A1FBD26 /* Lenses.swift */,
+				F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */,
 				F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */,
 				F80094512494D655004AA84A /* ForwardApplication.swift */,
 				F80094532494D670004AA84A /* ForwardComposition.swift */,
@@ -158,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */,
+				F882C8A724D9C5D300A82503 /* LensesTests.swift */,
 				FEC2391D9CF54F4A2A49D4DC /* Info.plist */,
 				F882C89324D939BE00A82503 /* Utils.swift */,
 				F882C89524D9440700A82503 /* Models.swift */,
@@ -412,8 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */,
 				F80094542494D670004AA84A /* ForwardComposition.swift in Sources */,
-				8187CEA3428BDDC1C2D1BF3F /* Lens.swift in Sources */,
+				8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */,
 				F80094522494D655004AA84A /* ForwardApplication.swift in Sources */,
 				F800945A2494E217004AA84A /* SingleTypeComposition.swift in Sources */,
 				F80094502494D5BF004AA84A /* PrecedenceGroups.swift in Sources */,
@@ -425,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F882C89624D9440700A82503 /* Models.swift in Sources */,
+				F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */,
 				E8096A49DD827BD23EBD78CF /* CapriceDemoTests.swift in Sources */,
 				F882C89424D939BE00A82503 /* Utils.swift in Sources */,
 			);
