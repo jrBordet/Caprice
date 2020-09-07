@@ -149,9 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				E7530B413EF3336B09BF4695 /* Info.plist */,
+				F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */,
 				1476DC01A97B19BC7A1FBD26 /* Lenses.swift */,
 				F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */,
-				F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */,
 				F80094512494D655004AA84A /* ForwardApplication.swift */,
 				F80094532494D670004AA84A /* ForwardComposition.swift */,
 				F80094592494E217004AA84A /* SingleTypeComposition.swift */,
@@ -162,9 +162,9 @@
 		27B7F35D9447471F548A03A1 /* CapriceDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				FEC2391D9CF54F4A2A49D4DC /* Info.plist */,
 				A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */,
 				F882C8A724D9C5D300A82503 /* LensesTests.swift */,
-				FEC2391D9CF54F4A2A49D4DC /* Info.plist */,
 				F882C89324D939BE00A82503 /* Utils.swift */,
 				F882C89524D9440700A82503 /* Models.swift */,
 			);
