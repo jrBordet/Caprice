@@ -25,7 +25,6 @@ struct F2<A, B> {
     let apply: (A) -> B
 }
 
-// //URLSession.shared.dataTask(with: <#T##URL#>, completionHandler: <#T##(Data?, URLResponse?, Error?) -> Void#>) -> Void
 struct F3<A> {
     let run: (@escaping (A) -> Void) -> Void
 }
@@ -40,16 +39,31 @@ class LensesTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func test_example() throws {
+    // MARK: - Operators
+    
+    func test_map() throws {
         let surname = books
             .filter(by(^\.author.name, "Massimo"))
-            .map(^\.author)
-            .map(^\.surname)
+            .map(^\.author.surname)
             .reduce("", +)
             .lowercased()
         
         XCTAssertEqual(surname, "pigliucci")
     }
+    
+    func test_query() throws {
+        let book = books.filter(by(^\.author.name, "Massimo"))
+        
+        XCTAssertEqual(book.first?.author.name, "Massimo")
+    }
+    
+    func test_sorting() {
+        let usersSorted = users.sorted(by: their(^\User.id, >))
+        
+        XCTAssertEqual(usersSorted.first!.id, 4)
+    }
+    
+    // MARK: - Lenses
     
     func test_lens_set() {
         let result = user |> \.email *~ "another@mail.com"
@@ -74,7 +88,7 @@ class LensesTests: XCTestCase {
     
     func test_lens_get_composition() {
         let name = .stoicism |> (lens(\Book.author) >>> lens(\Author.name)).get
-        
+                        
         XCTAssertEqual(name, "Massimo")
     }
     
@@ -176,8 +190,20 @@ class LensesTests: XCTestCase {
         
         XCTAssertEqual(resultBob, "HELLO BOB! 🤪")
         
-        let r = [0, 1, 2, 3].map { $0 |> hello.apply } //  f2.apply($0 |> incr(_:))
-        print(r)
+        let _ = [0, 1, 2, 3].map { $0 |> hello.apply } //  f2.apply($0 |> incr(_:))
+    }
+    
+    func test_F2_contramap() {
+        let f2 = F2<Int, String> { String($0) }
+        
+        let reverseMap: (String) -> Int = { s in s.count }
+        
+        let resultComap = f2 |> contramap(reverseMap)
+        
+        let resultMap = 4 |> f2.apply
+        
+        XCTAssertEqual(resultMap, "4")
+        XCTAssertEqual(resultComap.apply("ciao"), "4")
     }
     
     func test_F3_map() {
@@ -230,4 +256,11 @@ func map<A, B, C>(_ f: @escaping (B) -> C) -> (F2<A, B>) -> F2<A, C> {
     //            return f(f2.apply(a))
     //        }
     //    }
+}
+
+func contramap<A, B, C>(_ f: @escaping (B) -> A) -> ((F2<A, C>) -> F2<B, C>) {
+  return { g in
+    //F2(apply: f >>> g.apply)
+    F2(apply: g.apply <<< f)
+  }
 }
