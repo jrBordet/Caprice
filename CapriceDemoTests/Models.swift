@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Caprice
 
 func incr(_ x: Int) -> Int {
     x + 1
@@ -83,3 +84,17 @@ let episodes = [
     Episode(title: "UIKit Styling with Functions", viewCount: 1089),
     Episode(title: "Algebraic Data Types", viewCount: 729),
 ]
+
+public struct Predicate<A> {
+    let contains: (A) -> Bool
+    
+    public init(contains: @escaping(A) -> Bool) {
+        self.contains = contains
+    }
+}
+
+extension Predicate {
+    func contramap<B>(_ f: @escaping (B) -> A) -> Predicate<B> {
+        return Predicate<B>(contains: f >>> self.contains)
+    }
+}

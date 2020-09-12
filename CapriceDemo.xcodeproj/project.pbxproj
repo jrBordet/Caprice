@@ -22,6 +22,10 @@
 		F80094522494D655004AA84A /* ForwardApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094512494D655004AA84A /* ForwardApplication.swift */; };
 		F80094542494D670004AA84A /* ForwardComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094532494D670004AA84A /* ForwardComposition.swift */; };
 		F800945A2494E217004AA84A /* SingleTypeComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094592494E217004AA84A /* SingleTypeComposition.swift */; };
+		F82DE4062508A6820010189A /* SingleTypeCompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE4052508A6820010189A /* SingleTypeCompositionTests.swift */; };
+		F82DE4082508A6C40010189A /* OperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE4072508A6C40010189A /* OperatorsTests.swift */; };
+		F82DE40A2508A73B0010189A /* PredicateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE4092508A73B0010189A /* PredicateTests.swift */; };
+		F82DE40C2508F66B0010189A /* FunctorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE40B2508F66B0010189A /* FunctorsTests.swift */; };
 		F882C89224D889F000A82503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89124D889F000A82503 /* User.swift */; };
 		F882C89424D939BE00A82503 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89324D939BE00A82503 /* Utils.swift */; };
 		F882C89624D9440700A82503 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89524D9440700A82503 /* Models.swift */; };
@@ -86,6 +90,10 @@
 		F80094512494D655004AA84A /* ForwardApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardApplication.swift; sourceTree = "<group>"; };
 		F80094532494D670004AA84A /* ForwardComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardComposition.swift; sourceTree = "<group>"; };
 		F80094592494E217004AA84A /* SingleTypeComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeComposition.swift; sourceTree = "<group>"; };
+		F82DE4052508A6820010189A /* SingleTypeCompositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeCompositionTests.swift; sourceTree = "<group>"; };
+		F82DE4072508A6C40010189A /* OperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsTests.swift; sourceTree = "<group>"; };
+		F82DE4092508A73B0010189A /* PredicateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateTests.swift; sourceTree = "<group>"; };
+		F82DE40B2508F66B0010189A /* FunctorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctorsTests.swift; sourceTree = "<group>"; };
 		F882C89124D889F000A82503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F882C89324D939BE00A82503 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F882C89524D9440700A82503 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -165,6 +173,10 @@
 				FEC2391D9CF54F4A2A49D4DC /* Info.plist */,
 				A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */,
 				F882C8A724D9C5D300A82503 /* LensesTests.swift */,
+				F82DE4052508A6820010189A /* SingleTypeCompositionTests.swift */,
+				F82DE4092508A73B0010189A /* PredicateTests.swift */,
+				F82DE40B2508F66B0010189A /* FunctorsTests.swift */,
+				F82DE4072508A6C40010189A /* OperatorsTests.swift */,
 				F882C89324D939BE00A82503 /* Utils.swift */,
 				F882C89524D9440700A82503 /* Models.swift */,
 			);
@@ -432,7 +444,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F882C89624D9440700A82503 /* Models.swift in Sources */,
+				F82DE40A2508A73B0010189A /* PredicateTests.swift in Sources */,
+				F82DE4082508A6C40010189A /* OperatorsTests.swift in Sources */,
 				F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */,
+				F82DE4062508A6820010189A /* SingleTypeCompositionTests.swift in Sources */,
+				F82DE40C2508F66B0010189A /* FunctorsTests.swift in Sources */,
 				E8096A49DD827BD23EBD78CF /* CapriceDemoTests.swift in Sources */,
 				F882C89424D939BE00A82503 /* Utils.swift in Sources */,
 			);
