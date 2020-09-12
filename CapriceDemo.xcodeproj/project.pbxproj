@@ -31,6 +31,7 @@
 		F882C89624D9440700A82503 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89524D9440700A82503 /* Models.swift */; };
 		F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A724D9C5D300A82503 /* LensesTests.swift */; };
 		F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */; };
+		F8AD04FF250CF64D00361F29 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F8AD04FE250CF64D00361F29 /* README.md */; };
 		F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */; };
 		FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -99,6 +100,7 @@
 		F882C89524D9440700A82503 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F882C8A724D9C5D300A82503 /* LensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensesTests.swift; sourceTree = "<group>"; };
 		F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lenses+KeyPath.swift"; sourceTree = "<group>"; };
+		F8AD04FE250CF64D00361F29 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC2391D9CF54F4A2A49D4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 		1AA7FAB65FD8CACB3EA0CC32 = {
 			isa = PBXGroup;
 			children = (
+				F8AD04FE250CF64D00361F29 /* README.md */,
 				F83722320C207274D67B227C /* CapriceDemo */,
 				261EA5A5D58953549E5F5B76 /* Caprice */,
 				27B7F35D9447471F548A03A1 /* CapriceDemoTests */,
@@ -337,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AD04FF250CF64D00361F29 /* README.md in Resources */,
 				A33303939F4D75DEFB3E72AE /* DetailViewController.xib in Resources */,
 				D05E9273109D712309C09F54 /* ViewController.xib in Resources */,
 			);

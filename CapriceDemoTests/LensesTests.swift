@@ -60,6 +60,22 @@ class LensesTests: XCTestCase {
         
         XCTAssertEqual(value, 43)
     }
+    
+    func test_lens_over() {
+        let expectedResult = Book.galacticGuideForHitchhikers
+            |> lens(\Book.author.name) *~ "ADAMS"
+            |> lens(\Book.author.surname) *~ "DOUGLAS"
+            |> lens(\Book.title) *~ "galactic guide for hitchhikers ♥️"
+        
+        let update =
+            lens(\Book.author.name).over { $0.uppercased() }
+                >>> lens(\Book.author.surname).over { $0.uppercased() }
+                >>> lens(\Book.title) %~ { $0 +  " ♥️" }
+        
+        let newBook = Book.galacticGuideForHitchhikers |> update
+        
+        XCTAssertEqual(newBook, expectedResult)
+    }
 }
 
 

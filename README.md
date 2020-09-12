@@ -33,6 +33,7 @@ pod install
 * [Lens](#Lens)
     * [get](#get)
     * [set](#set)
+    * [ober](#over)
 
 
 ## Operators
@@ -87,6 +88,16 @@ A `Lens` type and a bridge between the lens world and the Swift key path world.
     let result: Book = .it |> \Book.author.name *~ "new author"
     
     let newUser = lens(\User.id).set(0, user)
+```
+
+#### `over`
+```swift
+    let update =
+        lens(\Book.author.name).over { $0.uppercased() }
+            >>> lens(\Book.author.surname).over { $0.uppercased() }
+            >>> lens(\Book.title) %~ { $0 +  " ♥️" }
+    
+    let newBook = Book.galacticGuideForHitchhikers |> update
 ```
 
 ### `Operators`
