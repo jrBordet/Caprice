@@ -32,6 +32,8 @@
 		F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A724D9C5D300A82503 /* LensesTests.swift */; };
 		F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */; };
 		F8AD04FF250CF64D00361F29 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F8AD04FE250CF64D00361F29 /* README.md */; };
+		F8AD0501250CF81E00361F29 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD0500250CF81E00361F29 /* Predicate.swift */; };
+		F8AD0503250CF88E00361F29 /* ZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD0502250CF88E00361F29 /* ZipTests.swift */; };
 		F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */; };
 		FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -101,6 +103,8 @@
 		F882C8A724D9C5D300A82503 /* LensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensesTests.swift; sourceTree = "<group>"; };
 		F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lenses+KeyPath.swift"; sourceTree = "<group>"; };
 		F8AD04FE250CF64D00361F29 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F8AD0500250CF81E00361F29 /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
+		F8AD0502250CF88E00361F29 /* ZipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipTests.swift; sourceTree = "<group>"; };
 		F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC2391D9CF54F4A2A49D4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +170,7 @@
 				F80094512494D655004AA84A /* ForwardApplication.swift */,
 				F80094532494D670004AA84A /* ForwardComposition.swift */,
 				F80094592494E217004AA84A /* SingleTypeComposition.swift */,
+				F8AD0500250CF81E00361F29 /* Predicate.swift */,
 			);
 			path = Caprice;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				F82DE4072508A6C40010189A /* OperatorsTests.swift */,
 				F882C89324D939BE00A82503 /* Utils.swift */,
 				F882C89524D9440700A82503 /* Models.swift */,
+				F8AD0502250CF88E00361F29 /* ZipTests.swift */,
 			);
 			path = CapriceDemoTests;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 			files = (
 				F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */,
 				F80094542494D670004AA84A /* ForwardComposition.swift in Sources */,
+				F8AD0501250CF81E00361F29 /* Predicate.swift in Sources */,
 				8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */,
 				F80094522494D655004AA84A /* ForwardApplication.swift in Sources */,
 				F800945A2494E217004AA84A /* SingleTypeComposition.swift in Sources */,
@@ -452,6 +459,7 @@
 				F82DE4082508A6C40010189A /* OperatorsTests.swift in Sources */,
 				F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */,
 				F82DE4062508A6820010189A /* SingleTypeCompositionTests.swift in Sources */,
+				F8AD0503250CF88E00361F29 /* ZipTests.swift in Sources */,
 				F82DE40C2508F66B0010189A /* FunctorsTests.swift in Sources */,
 				E8096A49DD827BD23EBD78CF /* CapriceDemoTests.swift in Sources */,
 				F882C89424D939BE00A82503 /* Utils.swift in Sources */,

@@ -35,12 +35,13 @@ pod install
     * [set](#set)
     * [ober](#over)
 
-
 ## Operators
 
 * [map](#map)
 * [filter](#filter)
 * [sort](#sort)
+
+## [Predicate](#Predicate)
 
 ## `Optics`
 A `Lens` type and a bridge between the lens world and the Swift key path world.
@@ -129,4 +130,22 @@ Sorts the elements with respect to a Comparable property.
 
 ```swift
     let usersSorted = users.sorted(by: their(^\User.id, >))
+```
+
+### `Predicate`
+
+```swift
+    let user = User(
+        id: 0,
+        email: "email@gmail.com"
+    )
+
+    let emailPredicate = Predicate<String> {
+        $0 |> NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}").evaluate(with:)
+    }
+
+    let userEmailCmp = emailPredicate.contramap(^\User.email)
+
+    XCTAssertTrue(user.email |> emailPredicate.contains)
+    XCTAssertTrue(user |> userEmailCmp.contains)
 ```
