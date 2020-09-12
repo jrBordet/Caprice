@@ -33,7 +33,7 @@ pod install
 * [Lens](#Lens)
     * [get](#get)
     * [set](#set)
-    * [ober](#over)
+    * [over](#over)
 
 ## Operators
 
