@@ -25,5 +25,15 @@ precedencegroup ForwardComposition {
 
 precedencegroup SingleTypeComposition {
     associativity: right
-    higherThan: ForwardApplication
+    higherThan: ForwardApplication, BackwardsComposition
+}
+
+precedencegroup BackwardsComposition {
+    associativity: left
+    higherThan: EffectfulComposition
+}
+
+precedencegroup OverApplication {
+    associativity: left
+    higherThan: ForwardComposition
 }

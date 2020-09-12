@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Caprice
 
 func incr(_ x: Int) -> Int {
     x + 1
@@ -26,6 +27,10 @@ public struct User: Equatable {
     }
 }
 
+extension User {
+    static var empty = User(id: 0, email: "")
+}
+
 let books: [Book] = [
     .it,
     .stoicism
@@ -41,6 +46,7 @@ public struct Book: Equatable {
 extension Book {
     static var stoicism = Book(id: 0, title: "Come essere stoico", author: .max)
     static var it = Book(id: 1, title: "IT", author: .king)
+    static var galacticGuideForHitchhikers = Book(id: 2, title: "galactic guide for hitchhikers", author: .adams)
 }
 
 public struct Author: Equatable {
@@ -51,6 +57,7 @@ public struct Author: Equatable {
 extension Author {
     static var king = Author(name: "Stephen", surname: "King")
     static var max = Author(name: "Massimo", surname: "Pigliucci")
+    static var adams = Author(name: "Adams", surname: "Douglas")
 }
 
 extension User {

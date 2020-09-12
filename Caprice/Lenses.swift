@@ -23,16 +23,16 @@ public struct Lens <A, B> {
         self.get = get
         self.set = set
     }
+    
+    /**
+     Map a function over a part of a whole.
+     - parameter f: A function.
+     - returns: A function that takes wholes to wholes by applying the function to a subpart.
+     */
+    public func over(_ f: @escaping (B) -> B) -> ((A) -> A) {
+      return { a in
+        let b = self.get(a)
+        return self.set(f(b), a)
+      }
+    }
 }
-
-
-//public func compose <A, B, C> (_ lhs: Lens<A, B>, _ rhs: Lens<B, C>) -> Lens<A, C> {
-//    Lens<A, C>(
-//        get: { a in rhs.get(lhs.get(a)) },
-//        set: { (c, a) in lhs.set(rhs.set(c, lhs.get(a)), a) }
-//    )
-//}
-//
-//public func * <A, B, C> (_ lhs: Lens<A, B>, rhs: Lens<B, C>) -> Lens<A, C> {
-//    return compose(lhs, rhs)
-//}

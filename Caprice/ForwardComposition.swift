@@ -23,6 +23,12 @@ public prefix func ^ <A, B> (lhs: Lens<A, B>) -> (A) -> B {
     }
 }
 
+infix operator %~: OverApplication
+
+public func %~ <A, B>(_ lens: Lens<A, B>, f: @escaping (B) -> B) -> ((A) -> A) {
+    lens.over(f)
+}
+
 infix operator >>>: ForwardComposition
 
 public func >>> <A>(
@@ -50,3 +56,22 @@ public func >>> <A, B, C> (
         set: { (c, a) in lhs.set(rhs.set(c, lhs.get(a)), a) }
     )
 }
+
+public func compose <A, B, C> (_ lhs: Lens<A, B>, _ rhs: Lens<B, C>) -> Lens<A, C> {
+    Lens<A, C>(
+        get: { a in rhs.get(lhs.get(a)) },
+        set: { (c, a) in lhs.set(rhs.set(c, lhs.get(a)), a) }
+    )
+}
+
+infix operator <<<: BackwardsComposition
+
+public func <<< <A,B,C>(
+    g: @escaping (B) -> C,
+    f: @escaping (A) -> B) -> (A) -> C {
+    return { x in
+        f(x) |> g
+        //g(f(x))
+    }
+}
+

@@ -53,7 +53,7 @@ class AppThemeTests: XCTestCase {
             .map(^\.count)
         
         // it’s a nice performance gain, too! A single traversal instead of two.
-        let r = users.map(^\User.email >>> ^\.count)
+        let _ = users.map(^\User.email >>> ^\.count)
         
         let p = users.map(^\.id).reduce(0, +)
                 
@@ -64,6 +64,13 @@ class AppThemeTests: XCTestCase {
         
         _ = users
             .filter(get(\.isStaff) >>> (!))
+    }
+    
+    func test_map_backward_composition() {
+        let first: (Int) -> Int = { $0 + 1 }
+        let second: (Int) -> String = { String($0) }
+        
+        XCTAssertEqual(1 |> second <<< first, 1 |> first >>> second)
     }
     
     func test_filter_composition() {
