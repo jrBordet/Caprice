@@ -20,3 +20,8 @@ extension Predicate {
         return Predicate<B>(contains: f >>> self.contains)
     }
 }
+
+public enum Validated<Value, Error> {
+  case valid(Value)
+  case invalid([Error])
+}

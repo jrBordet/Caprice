@@ -85,7 +85,7 @@ class AppThemeTests: XCTestCase {
     func test_filter() {
         let userOne = users.filter { $0 |> ^\User.id == 1 }.first!
                 
-        XCTAssertEqual(userOne, User(id: 1, email: "blob@fake.co"))
+        XCTAssertEqual(userOne, User(id: 1, email: "blob@fake.co", name: "Blob"))
         
         let authors = books.filter(by(^\.author.name, "Massimo"))
         
@@ -103,13 +103,13 @@ class AppThemeTests: XCTestCase {
     func test_filter_composition_2() {
         let r = users.filter(by(^\.id, 1)).first!
                 
-        XCTAssertEqual(r, User(id: 1, email: "blob@fake.co"))
+        XCTAssertEqual(r, User(id: 1, email: "blob@fake.co", name: "Blob"))
     }
     
     func test_sorting() {
         let emailResult = users.sorted(by: their(^\.email, <))
         
-        XCTAssertEqual(emailResult.first, User(id: 4, email: "a.morphism@category.theory"))
+        XCTAssertEqual(emailResult.first, User(id: 4, email: "a.morphism@category.theory", name: "A"))
         
         let idResult = users.sorted(by: their(^\User.id, <))
         

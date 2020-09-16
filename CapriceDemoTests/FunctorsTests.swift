@@ -26,7 +26,7 @@ struct F2<A, B> {
     let apply: (A) -> B
 }
 
-struct F3<A> {
+struct Parallel<A> {
     let run: (@escaping (A) -> Void) -> Void
 }
 
@@ -98,14 +98,14 @@ class FunctorsTests: XCTestCase {
     }
     
     func test_F3_map() {
-        let save = F3<String> { $0("access_token") }
+        let save = Parallel<String> { $0("access_token") }
         
         _ = save.run { v in
             print(v)
             // TODO"- save access token here
         }
         
-        let t = F3<Int> { i in print(i) }
+        let t = Parallel<Int> { i in print(i) }
         
         save |> map { v in print(v) }
         
@@ -118,19 +118,6 @@ class FunctorsTests: XCTestCase {
         }
     }
     
-}
-
-func map<A, B>(_ f: @escaping (A) -> B) -> (F3<A>) -> F3<B> {
-    return { f3 in
-        F3 { callback in
-            //            f3.run // ((A) -> Void) -> Void
-            //            callback // (B) -> Void
-            //            f // (A) -> B
-            let _ = f >>> callback // (A) -> Void
-            
-            return f3.run(f >>> callback)
-        }
-    }
 }
 
 func map<A, B>(_ f: @escaping (A) -> B) -> (F1<A>) -> F1<B> {
