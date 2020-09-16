@@ -27,7 +27,7 @@ class ZipTestsFinal: XCTestCase {
             emails,
             names
         )
-        
+                
         XCTAssertEqual(users.count, 3)
     }
     
@@ -137,32 +137,6 @@ class ZipTestsFinal: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
     
-    func test_apply_result_success() throws {
-        let lhs: Result<((String) -> Int), NSError> = Result.success { $0.count }
-        let rhs: Result<String, NSError> = Result.success("hello")
-        
-        //        let result = apply(lhs, rhs: rhs)
-        
-        let result = lhs <*> rhs
-        
-        let v = try result.get()
-        
-        XCTAssertEqual(v, 5)
-    }
-    
-    func test_apply_result_failure() throws {
-        let lhs: Result<((String) -> Int), NSError> = .success { $0.count }
-        let rhs: Result<String, NSError> = .failure(NSError(domain: "", code: 3, userInfo: nil))
-        
-        let result = lhs <*> rhs
-        
-        guard case let .failure(value) = result else {
-            fatalError()
-        }
-        
-        XCTAssertEqual(value.code, 3)
-    }
-    
     // MARK: - Applicative
     
     func test_applicative_functor_parallel() {
@@ -189,10 +163,6 @@ class ZipTestsFinal: XCTestCase {
         XCTAssertEqual(result.value, 2)
     }
     
-    // Monads are containers you can call flatMap on.
-    
-//    This one is ridiculously easy. flatMap is a function that transforms a value, then re-wrap it in the original container type. It's like map, but you have to provide the container inside your transformation function. I'll show you the implementation:
-    
     
 }
 
@@ -212,20 +182,6 @@ func map<A, B>(_ f: @escaping(A) -> B) -> (Box<A>) -> Box<B> {
     }
 }
 
-// MARK: - Apply operator
-
-precedencegroup Apply { associativity: left }
-infix operator <*>: Apply
-
-func <*><A, B, E>(_ lhs: Result<((A) -> B), E>, rhs: Result<A, E>) -> Result<B, E> {
-    switch lhs {
-    case let .success(value):
-        return rhs.map { value($0) } // Result<B, E>
-    case let .failure(error):
-        return .failure(error)
-    }
-}
-
 func apply<A, B, E>(_ lhs: Validated<((A) -> B), E>, rhs: Validated<A, E>) -> Validated<B, [E]> {
     switch lhs {
     case let .valid(value):
@@ -236,7 +192,7 @@ func apply<A, B, E>(_ lhs: Validated<((A) -> B), E>, rhs: Validated<A, E>) -> Va
         
         // func map<A, B, E>(_ f: @escaping (A) -> B) -> (Validated<A, E>) -> Validated<B, E> {
         //let z = value |> map(_:) //value |> mapValidated(_:)
-        map(<#T##f: (A) -> B##(A) -> B#>)
+       // map(<#T##f: (A) -> B##(A) -> B#>)
         
         break
 //        map { a -> B in
@@ -402,135 +358,9 @@ func apply<A, B>(_ lhs: Parallel<(A) -> B>, rhs: Parallel<A>) -> Parallel<B> {
 
 // MARK: - Zip Parallel
 
-extension Validated {
-    func map<A, B, E>(_ f: @escaping (A) -> B) -> (Validated<A, E>) -> Validated<B, E> {
-        return { validated in
-            switch validated {
-            case let .valid(a):
-                return .valid(f(a))
-            case let .invalid(e):
-                return .invalid(e)
-            }
-        }
-    }
-}
-
-func map<A, B, E>(_ f: @escaping (A) -> B) -> (Validated<A, E>) -> Validated<B, E> {
-    return { validated in
-        switch validated {
-        case let .valid(a):
-            return .valid(f(a))
-        case let .invalid(e):
-            return .invalid(e)
-        }
-    }
-}
-
-func map<A, B>(_ f: @escaping (A) -> B) -> (Parallel<A>) -> Parallel<B> {
-    return { f3 in
-        return Parallel { callback in
-            f3.run { callback(f($0)) }
-        }
-    }
-}
-
-func zip2<A, B>(_ fa: Parallel<A>, _ fb: Parallel<B>) -> Parallel<(A, B)> {
-    return Parallel<(A, B)> { callback in
-        var a: A?
-        var b: B?
-        fa.run {
-            a = $0
-            if let b = b { callback(($0, b)) }
-        }
-        fb.run {
-            b = $0
-            if let a = a { callback((a, $0)) }
-        }
-    }
-}
-
-func zip2<A, B, C>(
-    with f: @escaping (A, B) -> C
-) -> (Parallel<A>, Parallel<B>) -> Parallel<C> {
-    
-    return { zip2($0, $1) |> map(f) }
-}
-
-func zip3<A, B, C>(_ fa: Parallel<A>, _ fb: Parallel<B>, _ fc: Parallel<C>) -> Parallel<(A, B, C)> {
-    return zip2(fa, zip2(fb, fc)) |> map { ($0, $1.0, $1.1) }
-}
-
-func zip3<A, B, C, D>(
-    with f: @escaping (A, B, C) -> D
-) -> (Parallel<A>, Parallel<B>, Parallel<C>) -> Parallel<D> {
-    
-    return { zip3($0, $1, $2) |> map(f) }
-}
-
 // MARK: - Zip Func
 
-func zip2<A, B, R>(_ r2a: Func<R, A>, _ r2b: Func<R, B>) -> Func<R, (A, B)> {
-    return Func<R, (A, B)> { r in
-        (r2a.apply(r), r2b.apply(r))
-    }
-}
-
-func zip3<A, B, C, R>(
-    _ r2a: Func<R, A>,
-    _ r2b: Func<R, B>,
-    _ r2c: Func<R, C>
-) -> Func<R, (A, B, C)> {
-    
-    return zip2(r2a, zip2(r2b, r2c)) |> map { ($0, $1.0, $1.1) }
-}
-
-func zip2<A, B, C, R>(
-    with f: @escaping (A, B) -> C
-) -> (Func<R, A>, Func<R, B>) -> Func<R, C> {
-    
-    return { zip2($0, $1) |> map(f) }
-}
-
-func zip3<A, B, C, D, R>(
-    with f: @escaping (A, B, C) -> D
-) -> (Func<R, A>, Func<R, B>, Func<R, C>) -> Func<R, D> {
-    
-    return { zip3($0, $1, $2) |> map(f) }
-}
-
 // MARK - Zip on Validated
-
-func zip2<A, B, E>(_ a: Validated<A, E>, _ b: Validated<B, E>) -> Validated<(A, B), E> {
-    switch (a, b) {
-    case let (.valid(a), .valid(b)):
-        return .valid((a, b))
-    case let (.valid, .invalid(e)):
-        return .invalid(e)
-    case let (.invalid(e), .valid):
-        return .invalid(e)
-    case let (.invalid(e1), .invalid(e2)):
-        return .invalid(e1 + e2)
-    }
-}
-
-func zip2<A, B, C, E>(
-    with f: @escaping (A, B) -> C
-) -> (Validated<A, E>, Validated<B, E>) -> Validated<C, E> {
-    
-    return { zip2($0, $1) |> map(f) }
-}
-
-func zip3<A, B, C, E>(_ a: Validated<A, E>, _ b: Validated<B, E>, _ c: Validated<C, E>) -> Validated<(A, B, C), E> {
-    return zip2(a, zip2(b, c))
-        |> map { a, bc in (a, bc.0, bc.1) }
-}
-
-func zip3<A, B, C, D, E>(
-    with f: @escaping (A, B, C) -> D
-) -> (Validated<A, E>, Validated<B, E>, Validated<C, E>) -> Validated<D, E> {
-    
-    return { zip3($0, $1, $2) |> map(f) }
-}
 
 func validate(email: String) -> Validated<String, String> {
     return email.index(of: "@") == nil
@@ -548,59 +378,4 @@ func validate(name: String) -> Validated<String, String> {
     return name.isEmpty
         ? .invalid(["name can't be blank"])
         : .valid(name)
-}
-
-// MARK - Zip on Array
-
-func zip2<A, B>(_ xs: [A], _ ys: [B]) -> [(A, B)] {
-    var result: [(A, B)] = []
-    (0..<min(xs.count, ys.count)).forEach { idx in
-        result.append((xs[idx], ys[idx]))
-    }
-    return result
-}
-
-func zip3<A, B, C>(_ xs: [A], _ ys: [B], _ zs: [C]) -> [(A, B, C)] {
-    return zip2(xs, zip2(ys, zs)) // [(A, (B, C))]
-        .map { a, bc in (a, bc.0, bc.1) }
-}
-
-func zip2<A, B, C>(
-    with f: @escaping (A, B) -> C
-) -> ([A], [B]) -> [C] {
-    
-    return { zip2($0, $1).map(f) }
-}
-
-func zip3<A, B, C, D>(
-    with f: @escaping (A, B, C) -> D
-) -> ([A], [B], [C]) -> [D] {
-    
-    return { zip3($0, $1, $2).map(f) }
-}
-
-// MARK: - Zip on optional
-
-func zip2<A, B>(_ a: A?, _ b: B?) -> (A, B)? {
-    guard let a = a, let b = b else { return nil }
-    return (a, b)
-}
-
-func zip3<A, B, C>(_ a: A?, _ b: B?, _ c: C?) -> (A, B, C)? {
-    return zip2(a, zip2(b, c))
-        .map { a, bc in (a, bc.0, bc.1) }
-}
-
-func zip2<A, B, C>(
-    with f: @escaping (A, B) -> C
-) -> (A?, B?) -> C? {
-    
-    return { zip2($0, $1).map(f) }
-}
-
-func zip3<A, B, C, D>(
-    with f: @escaping (A, B, C) -> D
-) -> (A?, B?, C?) -> D? {
-    
-    return { zip3($0, $1, $2).map(f) }
 }

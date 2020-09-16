@@ -8,6 +8,10 @@
 import XCTest
 import Caprice
 
+// Monads are containers you can call flatMap on.
+
+//    This one is ridiculously easy. flatMap is a function that transforms a value, then re-wrap it in the original container type. It's like map, but you have to provide the container inside your transformation function. I'll show you the implementation:
+
 class FlatMapTests: XCTestCase {
 
     override func setUpWithError() throws {

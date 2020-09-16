@@ -8,28 +8,6 @@
 import XCTest
 import Caprice
 
-/**
- A functor is a type that carries with it a map-like function.
- 
- So, we think it’s helpful to eschew any overly intuitive description of functor and instead rely only on it’s most basic property: the fact that it has a map function, and that the map function must satisfy the property that map(id) == id. And then from that we get to derive the wonderful property that map preserves function composition, i.e. map(f >>> g) == map(f) >>> map(g).
- */
-
-struct F1<A: Equatable>: Equatable {
-    static func == (lhs: F1<A>, rhs: F1<A>) -> Bool {
-        lhs.value == rhs.value
-    }
-    
-    let value: A
-}
-
-struct F2<A, B> {
-    let apply: (A) -> B
-}
-
-struct Parallel<A> {
-    let run: (@escaping (A) -> Void) -> Void
-}
-
 class FunctorsTests: XCTestCase {
     
     func test_lens_over() {
