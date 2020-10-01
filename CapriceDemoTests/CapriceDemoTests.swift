@@ -48,9 +48,9 @@ class AppThemeTests: XCTestCase {
     }
     
     func test_map_composition() {
-        _ = users
-            .map(\.email)
-            .map(^\.count)
+//        _ = users
+//            .map(\User.email)
+//            .map(^\String.count)
         
         // it’s a nice performance gain, too! A single traversal instead of two.
         let _ = users.map(^\User.email >>> ^\.count)

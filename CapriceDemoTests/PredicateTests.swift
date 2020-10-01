@@ -9,15 +9,6 @@ import XCTest
 import Caprice
 
 class PredicateTests: XCTestCase {
-    
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-    
     func test_predicate() throws {
         let evens = Predicate { $0 % 2 == 0}
         let odds = evens.contramap { $0 + 1 }
