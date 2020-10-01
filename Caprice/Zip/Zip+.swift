@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 public func zip<A, B, C>(
     with f: @escaping (A, B) -> C
 ) -> (A?, B?) -> C? {

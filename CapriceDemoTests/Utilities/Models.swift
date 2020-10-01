@@ -30,6 +30,8 @@ public struct User: Equatable {
     }
 }
 
+extension User: Decodable { }
+
 extension User {
     static var empty = User(id: 0, email: "", name: "Bob")
 }

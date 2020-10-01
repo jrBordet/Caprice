@@ -75,7 +75,7 @@ class FunctorsTests: XCTestCase {
         XCTAssertEqual(resultComap.apply("ciao"), "4")
     }
     
-    func test_F3_map() {
+    func test_parallel_map() {
         let save = Parallel<String> { $0("access_token") }
         
         _ = save.run { v in
@@ -92,7 +92,13 @@ class FunctorsTests: XCTestCase {
         let new = save |> map { v in print(v.uppercased())  }
         
         new.run {
-            print("")
+            print("new run")
+        }
+        
+        let d = delay(by: 0).map { 42 }.map { String.init($0) }
+        
+        d.run {
+            print($0)
         }
     }
     

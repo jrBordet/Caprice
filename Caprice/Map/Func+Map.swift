@@ -10,7 +10,9 @@ import Foundation
 public func map<A, B, R>(_ f: @escaping (A) -> B) -> (Func<R, A>) -> Func<R, B> {
     return { r2a in
         return Func { r in
-            f(r2a.apply(r))
+            //f(r2a.apply(r))
+            
+            r |> r2a.apply >>> f
         }
     }
 }
