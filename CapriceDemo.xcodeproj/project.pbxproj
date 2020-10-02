@@ -8,33 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		02E52386C9AA7CB0750737D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B2F013AA4C9D1E2AE29FC7 /* DetailViewController.swift */; };
+		03661741DE505B98DF04BD02 /* ForwardComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8888A29971A4216D90DDB8A2 /* ForwardComposition.swift */; };
+		08D519D7595070BC23AA0EF3 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9658FCB91915F13D5EB3C6C /* Pods_CapriceDemo.framework */; };
+		0B564C4EC0E482DEC69FC468 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE47DA59F7D4F5D071BEC2 /* User.swift */; };
+		0BFFBCF0A01E36285028CE3F /* Pods_CapriceDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E9968BB29B6CCD1140B75E /* Pods_CapriceDemoTests.framework */; };
+		0C728D1E50DE32B94AA03BAA /* FunctorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B80014CF5282A4ED3887FE /* FunctorsTests.swift */; };
+		0DD4AB1990B2A937B3D3608F /* ZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8172840DBF3056CDC6FF7FA /* ZipTests.swift */; };
+		283A95898A31AE3E047F4DF6 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94296F3A1CC910D1C3DBD556 /* Alarm.swift */; };
 		28A684245B29F2745913DECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB0519B4645C4C81E19EC6 /* AppDelegate.swift */; };
+		50C6B5CE299A3B5EE21F4D08 /* SingleTypeCompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2C4AB1E7EBB51660DA9DF /* SingleTypeCompositionTests.swift */; };
+		514EC5305E2EDCA9F0188A9B /* PrecedenceGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5B2B59A3D4FB984FB67CB /* PrecedenceGroups.swift */; };
+		55B1FBCB3EF70EA901C5A09F /* SingleTypeComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106EDDE42F27045F619FD54 /* SingleTypeComposition.swift */; };
+		685606E0EADAD85DD37E4E4E /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780257D427446BC566E9A3C2 /* Predicate.swift */; };
+		780CB17AE12EE3144774357A /* Alarm+Lenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D3D26510D4504A8C6300D /* Alarm+Lenses.swift */; };
 		8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476DC01A97B19BC7A1FBD26 /* Lenses.swift */; };
+		8746204FE5FC086C77923233 /* OperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ECF2FD7CE34226B71CA33F /* OperatorsTests.swift */; };
+		8B5F278AF3AF488849DBDF47 /* ForwardApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DDCEA24731379D3557B25 /* ForwardApplication.swift */; };
+		8DA690E602767524A9A0A5F6 /* LensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47AD0227DC0145A120BD835 /* LensesTests.swift */; };
 		A33303939F4D75DEFB3E72AE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B1BA7EF448BC7D7733B9DB /* DetailViewController.xib */; };
-		B8F820643F7B79EAF33B5BA5 /* Pods_CapriceDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834BD428A9763D5195950069 /* Pods_CapriceDemoTests.framework */; };
+		A712AD7FE72B26332F0CD78B /* PredicateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABB24BC76A60A1A812BF80 /* PredicateTests.swift */; };
+		AA073405B77528C4C20D4A4E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016360B8E604E735299D205E /* Models.swift */; };
 		D05E9273109D712309C09F54 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548C12DBC3D7FFEA61F26DE8 /* ViewController.xib */; };
 		DCA2795C0C8D70C9A13732B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181BCB50AD7E188A0E74300 /* ViewController.swift */; };
+		DD20BB183A21DB896AD3A1B6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C351D4007A78C9B0536415F9 /* Utils.swift */; };
+		E155ED201668CBA75C11C2E3 /* Lenses+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894833CA85F5DC96AF417788 /* Lenses+KeyPath.swift */; };
 		E25AEED47D80B8AC291CCC2C /* Caprice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; };
 		E8096A49DD827BD23EBD78CF /* CapriceDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */; };
-		F800944C2494D563004AA84A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800944B2494D563004AA84A /* Alarm.swift */; };
-		F800944E2494D578004AA84A /* Alarm+Lenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800944D2494D578004AA84A /* Alarm+Lenses.swift */; };
-		F80094502494D5BF004AA84A /* PrecedenceGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */; };
-		F80094522494D655004AA84A /* ForwardApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094512494D655004AA84A /* ForwardApplication.swift */; };
-		F80094542494D670004AA84A /* ForwardComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094532494D670004AA84A /* ForwardComposition.swift */; };
-		F800945A2494E217004AA84A /* SingleTypeComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80094592494E217004AA84A /* SingleTypeComposition.swift */; };
-		F82DE4062508A6820010189A /* SingleTypeCompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE4052508A6820010189A /* SingleTypeCompositionTests.swift */; };
-		F82DE4082508A6C40010189A /* OperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE4072508A6C40010189A /* OperatorsTests.swift */; };
-		F82DE40A2508A73B0010189A /* PredicateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE4092508A73B0010189A /* PredicateTests.swift */; };
-		F82DE40C2508F66B0010189A /* FunctorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82DE40B2508F66B0010189A /* FunctorsTests.swift */; };
-		F882C89224D889F000A82503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89124D889F000A82503 /* User.swift */; };
-		F882C89424D939BE00A82503 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89324D939BE00A82503 /* Utils.swift */; };
-		F882C89624D9440700A82503 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C89524D9440700A82503 /* Models.swift */; };
-		F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A724D9C5D300A82503 /* LensesTests.swift */; };
-		F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */; };
-		F8AD04FF250CF64D00361F29 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F8AD04FE250CF64D00361F29 /* README.md */; };
-		F8AD0501250CF81E00361F29 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD0500250CF81E00361F29 /* Predicate.swift */; };
-		F8AD0503250CF88E00361F29 /* ZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD0502250CF88E00361F29 /* ZipTests.swift */; };
-		F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */; };
 		FF972365BBFBD526557B3D34 /* Caprice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE9DEEFE867400AE62BF4795 /* Caprice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -70,55 +69,54 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		016360B8E604E735299D205E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		058DDCEA24731379D3557B25 /* ForwardApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardApplication.swift; sourceTree = "<group>"; };
 		1476DC01A97B19BC7A1FBD26 /* Lenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lenses.swift; sourceTree = "<group>"; };
+		1A584A46809AB5444A0C3CF1 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		1ACB0519B4645C4C81E19EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapriceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B5B2B59A3D4FB984FB67CB /* PrecedenceGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecedenceGroups.swift; sourceTree = "<group>"; };
+		34E9968BB29B6CCD1140B75E /* Pods_CapriceDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapriceDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4106EDDE42F27045F619FD54 /* SingleTypeComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeComposition.swift; sourceTree = "<group>"; };
+		48ABB24BC76A60A1A812BF80 /* PredicateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateTests.swift; sourceTree = "<group>"; };
+		4E9E548D5B7B284288AEB897 /* Pods-CapriceDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4EA2EBD30BB5C17071E56948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		53ECF2FD7CE34226B71CA33F /* OperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsTests.swift; sourceTree = "<group>"; };
 		548C12DBC3D7FFEA61F26DE8 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		552D6665E2A342980149FF5B /* Pods-CapriceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemo.debug.xcconfig"; path = "Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6B8D3D26510D4504A8C6300D /* Alarm+Lenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alarm+Lenses.swift"; sourceTree = "<group>"; };
+		70CE47DA59F7D4F5D071BEC2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		73B2F013AA4C9D1E2AE29FC7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		834BD428A9763D5195950069 /* Pods_CapriceDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapriceDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		780257D427446BC566E9A3C2 /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
+		80A2C4AB1E7EBB51660DA9DF /* SingleTypeCompositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeCompositionTests.swift; sourceTree = "<group>"; };
+		8888A29971A4216D90DDB8A2 /* ForwardComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardComposition.swift; sourceTree = "<group>"; };
+		894833CA85F5DC96AF417788 /* Lenses+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lenses+KeyPath.swift"; sourceTree = "<group>"; };
+		91B80014CF5282A4ED3887FE /* FunctorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctorsTests.swift; sourceTree = "<group>"; };
+		94296F3A1CC910D1C3DBD556 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		97B1BA7EF448BC7D7733B9DB /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapriceDemoTests.swift; sourceTree = "<group>"; };
+		ACB2C5AC7857C5D9EE03E989 /* Pods-CapriceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemo.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AE9DEEFE867400AE62BF4795 /* Caprice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Caprice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B181BCB50AD7E188A0E74300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF33AF8CE1741E8A7BA8A876 /* Pods-CapriceDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CF805FA9EF7FBB44B0C13FA6 /* Pods-CapriceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemo.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BB19EF87D835AA78E68A1064 /* Pods-CapriceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemo.debug.xcconfig"; path = "Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C351D4007A78C9B0536415F9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D47AD0227DC0145A120BD835 /* LensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensesTests.swift; sourceTree = "<group>"; };
 		DEE9C8FA1275960484D2D65E /* CapriceDemoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CapriceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7530B413EF3336B09BF4695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		F5CD1449B6B94FF44B638C46 /* CapriceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapriceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F800944B2494D563004AA84A /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
-		F800944D2494D578004AA84A /* Alarm+Lenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alarm+Lenses.swift"; sourceTree = "<group>"; };
-		F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecedenceGroups.swift; sourceTree = "<group>"; };
-		F80094512494D655004AA84A /* ForwardApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardApplication.swift; sourceTree = "<group>"; };
-		F80094532494D670004AA84A /* ForwardComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardComposition.swift; sourceTree = "<group>"; };
-		F80094592494E217004AA84A /* SingleTypeComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeComposition.swift; sourceTree = "<group>"; };
-		F82DE4052508A6820010189A /* SingleTypeCompositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeCompositionTests.swift; sourceTree = "<group>"; };
-		F82DE4072508A6C40010189A /* OperatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorsTests.swift; sourceTree = "<group>"; };
-		F82DE4092508A73B0010189A /* PredicateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateTests.swift; sourceTree = "<group>"; };
-		F82DE40B2508F66B0010189A /* FunctorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctorsTests.swift; sourceTree = "<group>"; };
-		F882C89124D889F000A82503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		F882C89324D939BE00A82503 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		F882C89524D9440700A82503 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		F882C8A724D9C5D300A82503 /* LensesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensesTests.swift; sourceTree = "<group>"; };
-		F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lenses+KeyPath.swift"; sourceTree = "<group>"; };
-		F8AD04FE250CF64D00361F29 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F8AD0500250CF81E00361F29 /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
-		F8AD0502250CF88E00361F29 /* ZipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipTests.swift; sourceTree = "<group>"; };
-		F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapriceDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5CD1449B6B94FF44B638C46 /* CapriceDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CapriceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8172840DBF3056CDC6FF7FA /* ZipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipTests.swift; sourceTree = "<group>"; };
+		F9658FCB91915F13D5EB3C6C /* Pods_CapriceDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapriceDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC2391D9CF54F4A2A49D4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94A1D2F16B7227C6592D0E03 /* Frameworks */ = {
+		8D8038BDE1F69CB2A1877A1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8F820643F7B79EAF33B5BA5 /* Pods_CapriceDemoTests.framework in Frameworks */,
+				0BFFBCF0A01E36285028CE3F /* Pods_CapriceDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2FC1F346D6FB030B6C5596A /* Frameworks */ = {
+		A6C4E164428D645CCA837E77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,7 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25AEED47D80B8AC291CCC2C /* Caprice.framework in Frameworks */,
-				F8CA498883127906374B8651 /* Pods_CapriceDemo.framework in Frameworks */,
+				08D519D7595070BC23AA0EF3 /* Pods_CapriceDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,27 +148,26 @@
 		1AA7FAB65FD8CACB3EA0CC32 = {
 			isa = PBXGroup;
 			children = (
-				F8AD04FE250CF64D00361F29 /* README.md */,
-				F83722320C207274D67B227C /* CapriceDemo */,
 				261EA5A5D58953549E5F5B76 /* Caprice */,
+				F83722320C207274D67B227C /* CapriceDemo */,
 				27B7F35D9447471F548A03A1 /* CapriceDemoTests */,
 				17B6E66AE58794A8B19AAD73 /* Products */,
-				F73B03D6D20C3F913E9373F5 /* Pods */,
-				F63CF08ACBBC025EF68C812F /* Frameworks */,
+				2FB595C85D2982C75A125265 /* Pods */,
+				6D327117F7804E875B261D1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		261EA5A5D58953549E5F5B76 /* Caprice */ = {
 			isa = PBXGroup;
 			children = (
+				058DDCEA24731379D3557B25 /* ForwardApplication.swift */,
+				8888A29971A4216D90DDB8A2 /* ForwardComposition.swift */,
 				E7530B413EF3336B09BF4695 /* Info.plist */,
-				F800944F2494D5BE004AA84A /* PrecedenceGroups.swift */,
 				1476DC01A97B19BC7A1FBD26 /* Lenses.swift */,
-				F882C8A924DAA77A00A82503 /* Lenses+KeyPath.swift */,
-				F80094512494D655004AA84A /* ForwardApplication.swift */,
-				F80094532494D670004AA84A /* ForwardComposition.swift */,
-				F80094592494E217004AA84A /* SingleTypeComposition.swift */,
-				F8AD0500250CF81E00361F29 /* Predicate.swift */,
+				894833CA85F5DC96AF417788 /* Lenses+KeyPath.swift */,
+				20B5B2B59A3D4FB984FB67CB /* PrecedenceGroups.swift */,
+				780257D427446BC566E9A3C2 /* Predicate.swift */,
+				4106EDDE42F27045F619FD54 /* SingleTypeComposition.swift */,
 			);
 			path = Caprice;
 			sourceTree = "<group>";
@@ -178,58 +175,58 @@
 		27B7F35D9447471F548A03A1 /* CapriceDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				FEC2391D9CF54F4A2A49D4DC /* Info.plist */,
 				A50882091C0A94070D8A7CD7 /* CapriceDemoTests.swift */,
-				F882C8A724D9C5D300A82503 /* LensesTests.swift */,
-				F82DE4052508A6820010189A /* SingleTypeCompositionTests.swift */,
-				F82DE4092508A73B0010189A /* PredicateTests.swift */,
-				F82DE40B2508F66B0010189A /* FunctorsTests.swift */,
-				F82DE4072508A6C40010189A /* OperatorsTests.swift */,
-				F882C89324D939BE00A82503 /* Utils.swift */,
-				F882C89524D9440700A82503 /* Models.swift */,
-				F8AD0502250CF88E00361F29 /* ZipTests.swift */,
+				91B80014CF5282A4ED3887FE /* FunctorsTests.swift */,
+				FEC2391D9CF54F4A2A49D4DC /* Info.plist */,
+				D47AD0227DC0145A120BD835 /* LensesTests.swift */,
+				016360B8E604E735299D205E /* Models.swift */,
+				53ECF2FD7CE34226B71CA33F /* OperatorsTests.swift */,
+				48ABB24BC76A60A1A812BF80 /* PredicateTests.swift */,
+				80A2C4AB1E7EBB51660DA9DF /* SingleTypeCompositionTests.swift */,
+				C351D4007A78C9B0536415F9 /* Utils.swift */,
+				F8172840DBF3056CDC6FF7FA /* ZipTests.swift */,
 			);
 			path = CapriceDemoTests;
+			sourceTree = "<group>";
+		};
+		2FB595C85D2982C75A125265 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB19EF87D835AA78E68A1064 /* Pods-CapriceDemo.debug.xcconfig */,
+				ACB2C5AC7857C5D9EE03E989 /* Pods-CapriceDemo.release.xcconfig */,
+				4E9E548D5B7B284288AEB897 /* Pods-CapriceDemoTests.debug.xcconfig */,
+				1A584A46809AB5444A0C3CF1 /* Pods-CapriceDemoTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		4E821920EA9BE32B786A4DCF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F800944A2494D553004AA84A /* Models */,
 				73B2F013AA4C9D1E2AE29FC7 /* DetailViewController.swift */,
 				97B1BA7EF448BC7D7733B9DB /* DetailViewController.xib */,
 				B181BCB50AD7E188A0E74300 /* ViewController.swift */,
 				548C12DBC3D7FFEA61F26DE8 /* ViewController.xib */,
+				E456D96C944264B7B9587F02 /* Models */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		F63CF08ACBBC025EF68C812F /* Frameworks */ = {
+		6D327117F7804E875B261D1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F1A85CB1EA578610AB09737 /* Pods_CapriceDemo.framework */,
-				834BD428A9763D5195950069 /* Pods_CapriceDemoTests.framework */,
+				F9658FCB91915F13D5EB3C6C /* Pods_CapriceDemo.framework */,
+				34E9968BB29B6CCD1140B75E /* Pods_CapriceDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F73B03D6D20C3F913E9373F5 /* Pods */ = {
+		E456D96C944264B7B9587F02 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				552D6665E2A342980149FF5B /* Pods-CapriceDemo.debug.xcconfig */,
-				CF805FA9EF7FBB44B0C13FA6 /* Pods-CapriceDemo.release.xcconfig */,
-				CF33AF8CE1741E8A7BA8A876 /* Pods-CapriceDemoTests.debug.xcconfig */,
-				F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		F800944A2494D553004AA84A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F800944B2494D563004AA84A /* Alarm.swift */,
-				F800944D2494D578004AA84A /* Alarm+Lenses.swift */,
-				F882C89124D889F000A82503 /* User.swift */,
+				94296F3A1CC910D1C3DBD556 /* Alarm.swift */,
+				6B8D3D26510D4504A8C6300D /* Alarm+Lenses.swift */,
+				70CE47DA59F7D4F5D071BEC2 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,10 +248,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2B324DCEDF7065986BF1D10 /* Build configuration list for PBXNativeTarget "CapriceDemoTests" */;
 			buildPhases = (
-				A6E3F578DDBB123719ECF522 /* [CP] Check Pods Manifest.lock */,
+				D666CA0FCA423A0DBE4C3384 /* [CP] Check Pods Manifest.lock */,
 				B38058E9C00B7BB1550D2C5B /* Sources */,
-				94A1D2F16B7227C6592D0E03 /* Frameworks */,
-				26B9A5947D9976E0E84D3BC1 /* [CP] Embed Pods Frameworks */,
+				8D8038BDE1F69CB2A1877A1C /* Frameworks */,
+				F19B06B566C08D51D3B27DB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,12 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0088CD696E4A59FED6E858E9 /* Build configuration list for PBXNativeTarget "CapriceDemo" */;
 			buildPhases = (
-				F1E3EDFBBACF0A0FC48FCA6E /* [CP] Check Pods Manifest.lock */,
+				3A17776CE2B02847B11549EA /* [CP] Check Pods Manifest.lock */,
 				DE4753378BF8937E55AA6925 /* Sources */,
 				8B5380E7560ADB8489E950CD /* Resources */,
 				E4A4ECF8E96CB71A8F9332AB /* Frameworks */,
 				487509FD4BAE7C596D3A199F /* Embed Frameworks */,
-				F3DB05AD19E6E154667D7F1E /* [CP] Embed Pods Frameworks */,
+				42A9C5A84E8D961CBB2E0EB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,7 +289,7 @@
 			buildConfigurationList = E6860C0522F925EBA4682A27 /* Build configuration list for PBXNativeTarget "Caprice" */;
 			buildPhases = (
 				A2DC2A174B45C8A5A6092DFC /* Sources */,
-				B2FC1F346D6FB030B6C5596A /* Frameworks */,
+				A6C4E164428D645CCA837E77 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +309,12 @@
 				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					5AC0189CB830A160FB2A7615 = {
+						DevelopmentTeam = None;
+					};
+					BAA038E569489A1FC832889E = {
+						DevelopmentTeam = None;
+					};
+					C16A0D8501CA646FB168B50F = {
 						DevelopmentTeam = None;
 					};
 				};
@@ -340,7 +343,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8AD04FF250CF64D00361F29 /* README.md in Resources */,
 				A33303939F4D75DEFB3E72AE /* DetailViewController.xib in Resources */,
 				D05E9273109D712309C09F54 /* ViewController.xib in Resources */,
 			);
@@ -349,46 +351,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26B9A5947D9976E0E84D3BC1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6E3F578DDBB123719ECF522 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CapriceDemoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1E3EDFBBACF0A0FC48FCA6E /* [CP] Check Pods Manifest.lock */ = {
+		3A17776CE2B02847B11549EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -410,7 +373,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3DB05AD19E6E154667D7F1E /* [CP] Embed Pods Frameworks */ = {
+		42A9C5A84E8D961CBB2E0EB8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,6 +390,45 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapriceDemo/Pods-CapriceDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D666CA0FCA423A0DBE4C3384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapriceDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19B06B566C08D51D3B27DB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapriceDemoTests/Pods-CapriceDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -434,13 +436,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F882C8AA24DAA77A00A82503 /* Lenses+KeyPath.swift in Sources */,
-				F80094542494D670004AA84A /* ForwardComposition.swift in Sources */,
-				F8AD0501250CF81E00361F29 /* Predicate.swift in Sources */,
+				8B5F278AF3AF488849DBDF47 /* ForwardApplication.swift in Sources */,
+				03661741DE505B98DF04BD02 /* ForwardComposition.swift in Sources */,
+				E155ED201668CBA75C11C2E3 /* Lenses+KeyPath.swift in Sources */,
 				8187CEA3428BDDC1C2D1BF3F /* Lenses.swift in Sources */,
-				F80094522494D655004AA84A /* ForwardApplication.swift in Sources */,
-				F800945A2494E217004AA84A /* SingleTypeComposition.swift in Sources */,
-				F80094502494D5BF004AA84A /* PrecedenceGroups.swift in Sources */,
+				514EC5305E2EDCA9F0188A9B /* PrecedenceGroups.swift in Sources */,
+				685606E0EADAD85DD37E4E4E /* Predicate.swift in Sources */,
+				55B1FBCB3EF70EA901C5A09F /* SingleTypeComposition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,15 +450,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F882C89624D9440700A82503 /* Models.swift in Sources */,
-				F82DE40A2508A73B0010189A /* PredicateTests.swift in Sources */,
-				F82DE4082508A6C40010189A /* OperatorsTests.swift in Sources */,
-				F882C8A824D9C5D300A82503 /* LensesTests.swift in Sources */,
-				F82DE4062508A6820010189A /* SingleTypeCompositionTests.swift in Sources */,
-				F8AD0503250CF88E00361F29 /* ZipTests.swift in Sources */,
-				F82DE40C2508F66B0010189A /* FunctorsTests.swift in Sources */,
 				E8096A49DD827BD23EBD78CF /* CapriceDemoTests.swift in Sources */,
-				F882C89424D939BE00A82503 /* Utils.swift in Sources */,
+				0C728D1E50DE32B94AA03BAA /* FunctorsTests.swift in Sources */,
+				8DA690E602767524A9A0A5F6 /* LensesTests.swift in Sources */,
+				AA073405B77528C4C20D4A4E /* Models.swift in Sources */,
+				8746204FE5FC086C77923233 /* OperatorsTests.swift in Sources */,
+				A712AD7FE72B26332F0CD78B /* PredicateTests.swift in Sources */,
+				50C6B5CE299A3B5EE21F4D08 /* SingleTypeCompositionTests.swift in Sources */,
+				DD20BB183A21DB896AD3A1B6 /* Utils.swift in Sources */,
+				0DD4AB1990B2A937B3D3608F /* ZipTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,12 +466,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780CB17AE12EE3144774357A /* Alarm+Lenses.swift in Sources */,
+				283A95898A31AE3E047F4DF6 /* Alarm.swift in Sources */,
 				28A684245B29F2745913DECC /* AppDelegate.swift in Sources */,
 				02E52386C9AA7CB0750737D6 /* DetailViewController.swift in Sources */,
-				F882C89224D889F000A82503 /* User.swift in Sources */,
-				F800944E2494D578004AA84A /* Alarm+Lenses.swift in Sources */,
+				0B564C4EC0E482DEC69FC468 /* User.swift in Sources */,
 				DCA2795C0C8D70C9A13732B1 /* ViewController.swift in Sources */,
-				F800944C2494D563004AA84A /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +605,7 @@
 		};
 		5110F12B784F258685887C67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF33AF8CE1741E8A7BA8A876 /* Pods-CapriceDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 4E9E548D5B7B284288AEB897 /* Pods-CapriceDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CapriceDemoTests/Info.plist;
@@ -622,11 +624,10 @@
 		};
 		54BB5F63810C00EF4D7395DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF805FA9EF7FBB44B0C13FA6 /* Pods-CapriceDemo.release.xcconfig */;
+			baseConfigurationReference = ACB2C5AC7857C5D9EE03E989 /* Pods-CapriceDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CapriceDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -641,7 +642,7 @@
 		};
 		81DD0CD3D0BF33EA4F8079D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9E43781570246BF83D8FA48 /* Pods-CapriceDemoTests.release.xcconfig */;
+			baseConfigurationReference = 1A584A46809AB5444A0C3CF1 /* Pods-CapriceDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CapriceDemoTests/Info.plist;
@@ -661,11 +662,9 @@
 		A713E4F180BCEEEA80E65B51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XP6P798NUV;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -679,6 +678,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.Caprice;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -687,11 +687,9 @@
 		AC90B0E241F5C47C79086586 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XP6P798NUV;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -705,6 +703,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.caprice.Caprice;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -712,11 +711,10 @@
 		};
 		C2CEC7C676598597F835FFEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 552D6665E2A342980149FF5B /* Pods-CapriceDemo.debug.xcconfig */;
+			baseConfigurationReference = BB19EF87D835AA78E68A1064 /* Pods-CapriceDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CapriceDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
