@@ -25,12 +25,12 @@ class LensesTests: XCTestCase {
     }
     
     func test_lens_set_composition() {
-        let book: Book = .stoicism
-            |> lens(\Book.author)
-            >>> lens(\Author.name)
+        let book: Book = .stoicism |>
+            lens(\Book.author) >>> lens(\Author.name)
             *~ "new author name"
         
         XCTAssertEqual(book |> ^\Book.author.name, "new author name")
+        
     }
     
     func test_lens_get_composition() {
@@ -75,6 +75,35 @@ class LensesTests: XCTestCase {
         let newBook = Book.galacticGuideForHitchhikers |> update
         
         XCTAssertEqual(newBook, expectedResult)
+    }
+    
+    func test_lens_zip() {
+        let lensBookTitle = Lens<Book, String>(
+            get: { book -> String in
+                book.title
+        }, set: { (title, book) -> Book in
+            Book(id: book.id, title: title, author: book.author)
+        })
+        
+        let lensBookId = Lens<Book, Int>.init(get: { book -> Int in
+            book.id
+        }, set: { (id, book) -> Book in
+            Book(id: id, title: book.title, author: book.author)
+        })
+        
+        let zippedLens = zip(lensBookTitle, lensBookId) // Lens<Book, (String, Int)>
+        
+        let result = zippedLens.get(Book.stoicism)
+        
+        XCTAssertEqual(result.0, "Come essere stoico")
+        XCTAssertEqual(result.1, 0)
+        
+        let newBook = zippedLens.set(("Come essere stoico aggiornato", 1), .stoicism)
+        
+        XCTAssertEqual(newBook.title, "Come essere stoico aggiornato")
+        XCTAssertEqual(newBook.id, 1)
+        
+        //LensLaw<Book, (String, Int)>.setGet(zippedLens, Book.stoicism, "Come essere stoico aggiornato")
     }
 }
 

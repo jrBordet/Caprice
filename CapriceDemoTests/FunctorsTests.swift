@@ -8,28 +8,6 @@
 import XCTest
 import Caprice
 
-/**
- A functor is a type that carries with it a map-like function.
- 
- So, we think it’s helpful to eschew any overly intuitive description of functor and instead rely only on it’s most basic property: the fact that it has a map function, and that the map function must satisfy the property that map(id) == id. And then from that we get to derive the wonderful property that map preserves function composition, i.e. map(f >>> g) == map(f) >>> map(g).
- */
-
-struct F1<A: Equatable>: Equatable {
-    static func == (lhs: F1<A>, rhs: F1<A>) -> Bool {
-        lhs.value == rhs.value
-    }
-    
-    let value: A
-}
-
-struct F2<A, B> {
-    let apply: (A) -> B
-}
-
-struct F3<A> {
-    let run: (@escaping (A) -> Void) -> Void
-}
-
 class FunctorsTests: XCTestCase {
     
     func test_lens_over() {
@@ -97,15 +75,15 @@ class FunctorsTests: XCTestCase {
         XCTAssertEqual(resultComap.apply("ciao"), "4")
     }
     
-    func test_F3_map() {
-        let save = F3<String> { $0("access_token") }
+    func test_parallel_map() {
+        let save = Parallel<String> { $0("access_token") }
         
         _ = save.run { v in
             print(v)
             // TODO"- save access token here
         }
         
-        let t = F3<Int> { i in print(i) }
+        let t = Parallel<Int> { i in print(i) }
         
         save |> map { v in print(v) }
         
@@ -114,23 +92,16 @@ class FunctorsTests: XCTestCase {
         let new = save |> map { v in print(v.uppercased())  }
         
         new.run {
-            print("")
+            print("new run")
+        }
+        
+        let d = delay(by: 0).map { 42 }.map { String.init($0) }
+        
+        d.run {
+            print($0)
         }
     }
     
-}
-
-func map<A, B>(_ f: @escaping (A) -> B) -> (F3<A>) -> F3<B> {
-    return { f3 in
-        F3 { callback in
-            //            f3.run // ((A) -> Void) -> Void
-            //            callback // (B) -> Void
-            //            f // (A) -> B
-            let _ = f >>> callback // (A) -> Void
-            
-            return f3.run(f >>> callback)
-        }
-    }
 }
 
 func map<A, B>(_ f: @escaping (A) -> B) -> (F1<A>) -> F1<B> {

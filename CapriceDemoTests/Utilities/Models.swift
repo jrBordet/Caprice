@@ -12,23 +12,28 @@ func incr(_ x: Int) -> Int {
     x + 1
 }
 
-let user = User(id: 1, email: "blob@syn.com")
+let user = User(id: 1, email: "blob@syn.com", name: "Bob")
 
 public struct User: Equatable {
     var id: Int
     var email: String
+    var name: String
     
     public init(
         id: Int,
-        email: String
+        email: String,
+        name: String
     ) {
         self.id = id
         self.email = email
+        self.name = name
     }
 }
 
+extension User: Decodable { }
+
 extension User {
-    static var empty = User(id: 0, email: "")
+    static var empty = User(id: 0, email: "", name: "Bob")
 }
 
 let books: [Book] = [
@@ -67,10 +72,10 @@ extension User {
 }
 
 let users = [
-    User(id: 1, email: "blob@fake.co"),
-    User(id: 2, email: "protocol.me.maybe@appleco.example"),
-    User(id: 3, email: "bee@co.domain"),
-    User(id: 4, email: "a.morphism@category.theory")
+    User(id: 1, email: "blob@fake.co", name: "Blob"),
+    User(id: 2, email: "protocol.me.maybe@appleco.example", name: "Sample"),
+    User(id: 3, email: "bee@co.domain", name: "Bee"),
+    User(id: 4, email: "a.morphism@category.theory", name: "A")
 ]
 
 struct Episode {

@@ -35,7 +35,8 @@ class PredicateTests: XCTestCase {
     func test_predicate_email() {
         let user = User(
             id: 0,
-            email: "email@gmail.com"
+            email: "email@gmail.com",
+            name: "Bob"
         )
         
         let emailPredicate = Predicate<String> {
@@ -43,7 +44,7 @@ class PredicateTests: XCTestCase {
         }
         
         let userEmailCmp = emailPredicate.contramap(^\User.email)
-        
+                
         XCTAssertTrue(user.email |> emailPredicate.contains)
         XCTAssertTrue(user |> userEmailCmp.contains)
         

@@ -37,3 +37,5 @@ precedencegroup OverApplication {
     associativity: left
     higherThan: ForwardComposition
 }
+
+precedencegroup Apply { associativity: left }
