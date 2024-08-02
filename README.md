@@ -4,7 +4,7 @@
 
 > Capriccio is a type of composition characterized by a certain freedom of realization. 
 
-Caprice is a library build with the intention of explore the functional programming world without constraint.
+Caprice is a library build with the intention of explore the functional programming world without constraints.
 
 ## Installation
 
